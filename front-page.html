@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
@@ -25,33 +26,83 @@
 </head>
 <body>
 <header class="header">
-  <div class="container">
+  <div class="hdr-topbar">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="header-inr clearfix">
-            <div class="hdr-lft">
-              <div class="logo">
-                <a href="#"><img src="assets/images/logo.png"></a>
-              </div>
+          <div class="hdr-topbar-inner clearfix">
+            <div class="hdr-topbar-social">
+              <ul class="ulc">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
             </div>
-            <div class="hdr-rgt">
-              <nav class="main-nav">
-                <ul class="clearfix">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </nav>
+            <div class="hdr-tp-contact">
+              <a href="tel:01735519844">
+                <i class="fa fa-phone"></i>
+                01735-519844
+              </a>
+            </div>
+            <div class="showrooms-btn">
+              <button>Showrooms</button>
+            </div>
+            <div class="hdr-search">
+              <form>
+                <input type="search" name="">
+                <button>
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="header-btm-bar">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="header-inr clearfix">
+              <div class="hdr-lft">
+                <div class="logo">
+                  <a href="#"><img src="assets/images/bd-logo.svg"></a>
+                </div>
+              </div>
+              <div class="hdr-rgt">
+                <nav class="main-nav">
+                  <ul class="clearfix">
+                    <li><a href="#">Home</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Bikes</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">sub menu</a></li>
+                        <li><a href="#">sub menu</a></li>
+                        <li><a href="#">sub menu</a></li>
+                        <li><a href="#">sub menu</a></li>
+                        <li><a href="#">sub menu</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Scooters</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Compare</a></li>
+                    <li><a href="#">User Review</a></li>
+                    <li><a href="#">Help Post</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
 </header>
+
+
+<section class="main-banner">
+  <img src="assets/images/home-top-banner.jpg">   
+</section>
 
 <section class="main-content">
   <div class="container">
@@ -72,10 +123,50 @@
     <div class="row">
       <div class="col-sm-4">
           <div class="ftr-col">
+            <div class="ftr-aboutus-col">
+              <h6>About us</h6>
+              <p><strong>MotorcycleValley.com</strong> is the first and largest website about motorcycle in Bangladesh. We have started our journey since 25th January 2012. We have experienced and hard working team and our prime goal is to provide motorcycle related necessary information to the visitors in easy way.</p>
+              <div class="footer-mail">
+                 <i class="fa fa-envelope"></i>
+                  <a href="mailto:info@bikecenter.net">info@bikecenter.com</a>
+              </div>
+            </div>
           </div>
       </div>
+      <div class="col-sm-4">
+        <div class="ftr-col">
+          <h6>Lorem Ipsum</h6>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="ftr-col">
+          <h6>Follow Us</h6>
+          <div class="ftr-social">
+            <ul class="clearfix ulc">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
+  </div>
+  <div class="ftr-btm">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>Copyright 2019 - bikecenter - All Rights Reserved</p>
+        </div>
+        <div class="col-sm-6">
+          <div class="developedby">
+            Developed by -
+            <a href="#">DhakaCoders</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>

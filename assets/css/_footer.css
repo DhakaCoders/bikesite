@@ -1,0 +1,75 @@
+.footer-wrap{
+	background: #151616;
+	margin: 150px 0 0;
+	padding: 50px 0 20px;
+	color: #999;
+}
+
+.ftr-aboutus-col{
+	font-size: 15px;
+}
+.ftr-col h6{
+	margin-bottom: 20px;
+	color: #fff;
+}
+.ftr-aboutus-col p{
+	font-weight: 300;
+	line-height: 20px;
+}
+.ftr-social ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-right: 10px;
+}
+.ftr-social ul li a{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #484848;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4b406;
+}
+.footer-mail{
+	position: relative;
+	padding: 10px 0 10px 50px;
+}
+.footer-mail i{
+	position: absolute;
+    font-size: 13px;
+    color: #f4b406;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    display: inline-block;
+    font-style: normal;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #f4b406;
+    border-radius: 100% 100%;
+    background: #fafafa;
+    left: 0;
+    top: 5px;
+}
+.footer-mail a,
+.developedby a{
+	color: #f4b406;
+}
+.ftr-btm{
+	border-top: 1px solid #9fa1a2;
+	padding-top: 20px;
+	margin-top: 25px;
+	font-size: 14px;
+	line-height: 100%;
+}
+.ftr-btm p{
+	margin-bottom: 0;
+	line-height: inherit;
+}
+.developedby{
+	text-align: right;
+}

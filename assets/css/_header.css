@@ -1,0 +1,218 @@
+.hdr-topbar{
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+.hdr-topbar-social{
+	float: left;
+	padding-top: 13px;
+}
+.showrooms-btn{
+	float: left;
+	padding-left: 20px;
+}
+.hdr-tp-contact{
+	float: left;
+	padding-top: 13px;
+}
+.hdr-tp-contact a{
+	color: #f4b406;
+	margin-right: 40px;
+	margin-left: 20px;
+}
+.showrooms-btn button{
+	padding: 15px 20px;
+	background: #f4b406;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 45px;
+	text-transform: uppercase;
+	line-height: 100%;
+}
+
+
+.hdr-topbar-social ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-right: 15px;
+}
+.hdr-topbar-social ul li a{
+	color: #f4b406;
+}
+
+.hdr-search{
+	float: right;
+	width: 50%;
+}
+.hdr-search form{
+	position: relative;
+}
+.hdr-search input[type="search"]{
+	width: 100%;
+	height: 45px;
+	border: 1px solid #ccc;
+	padding: 5px 90px 5px 20px;
+}
+.hdr-search button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 80px;
+	background: #000;
+	color: #fff;
+	font-weight: 700;
+}
+
+
+.header-btm-bar{
+	padding: 15px 0 0;
+}
+.hdr-lft{
+	float: left;
+	width: 20%;
+}
+
+.hdr-rgt{
+	float: right;
+	width: 80%;
+	padding-left: 50px;
+}
+nav.main-nav {
+    float: right;
+    padding-top: 10px;
+}
+nav.main-nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav.main-nav ul li, 
+nav.main-nav ul li a {
+    display: inline-block;
+    vertical-align: baseline;
+    vertical-align: baseline;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+nav.main-nav > ul > li {
+	padding: 0 10px 0;
+}
+nav.main-nav > ul > li:last-child{
+	padding-right: 0;
+}
+nav.main-nav > ul > li.current-menu-item a {
+	border:1px solid #fff;
+}
+nav.main-nav > ul > li > a {
+    position: relative;
+    padding-bottom: 20px;
+}
+nav.main-nav ul li a {
+    text-decoration: none;
+
+}
+nav.main-nav > ul > li.menu-item-has-children{
+	padding-right: 20px;
+}
+nav.main-nav > ul > li.menu-item-has-children:after{
+	 content: "\f107";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav.main-nav > ul > li.menu-item-has-children:hover:after{
+	content: "\f106";
+}
+nav.main-nav > ul > li > a:after{
+    border-bottom: 3px solid #f4b406;
+    content: "";
+    display: block;
+    height: 3px;
+    left: -1px;
+    position: absolute;
+    bottom: 0;
+    transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    transform-origin: center center 0;
+    transition: all 0.15s ease-out 0s;
+    width: 100%;
+}
+nav.main-nav > ul > li > a:hover:after{
+    transform: scale(1, 1);
+}
+nav.main-nav > ul > li.current-menu-item > a:after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	border: none;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	bottom: 0;
+	top: auto;
+
+}
+
+
+nav.main-nav > ul > li.menu-item-has-children:hover > a:after{
+	content: none;
+}
+header.banner-header  nav.main-nav ul li a{
+	/*color: #fff;*/
+}
+
+
+nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 205px;
+	padding: 20px 20px 10px 20px;
+	background: #fff;
+	border-top: 2px solid #fff;
+	z-index: 20;
+	box-shadow: 0 11px 10px 0 rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 0 11px 10px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 11px 10px 0 rgba(0, 0, 0, 0.15);
+    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+    transform-origin: top;
+    -ms-transform-origin: top;
+    -webkit-transform-origin: top;
+    opacity: 0;
+}
+nav.main-nav > ul > li.menu-item-has-children:hover > ul.sub-menu{
+    transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    opacity: 1;
+}
+nav.main-nav  ul.sub-menu li{
+	padding: 0 0 15px 0;
+	display: block;
+}
+nav.main-nav ul.sub-menu li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #004168;
+	font-size: 14px;
+}
