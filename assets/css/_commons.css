@@ -87,7 +87,8 @@ Containers
 .container-xlg{}
 .container-lg{}
 .container{
-	max-width: 1200px;
+	max-width: 1300px;
+	width: 100%;
 }
 .container-md{}
 

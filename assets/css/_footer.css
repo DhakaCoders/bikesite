@@ -7,6 +7,7 @@
 
 .ftr-aboutus-col{
 	font-size: 15px;
+	padding-right: 25px;
 }
 .ftr-col h6{
 	margin-bottom: 20px;
@@ -33,6 +34,35 @@
     align-items: center;
     color: #f4b406;
 }
+.ftr-mid-col ul li{
+	float: left;
+	width: 50%;
+	padding: 0 10px 15px;
+	font-size: 15px;
+	line-height: 100%;
+	position: relative;
+}
+.ftr-mid-col ul li a{
+	color: #999;
+	position: relative;
+	padding-left: 15px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.ftr-mid-col ul li a:before{
+	content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+   	left: 0;
+}
+
+
 .footer-mail{
 	position: relative;
 	padding: 10px 0 10px 50px;
