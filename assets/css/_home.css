@@ -37,16 +37,27 @@
 	font-weight: 400;
 }
 .main-bnr-slide-item-des a {
-    background: #f4b406;
     border-radius: 26px;
-    color: #ffffff;
+    color: #000;
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
-    height: 49px;
-    width: 135px;
+    padding-right: 45px;
     text-align: center;
-    padding-top: 12px;
+    position: relative;
+}
+.main-bnr-slide-item-des a:after{
+	content: "";
+   	background: url(../images/right-arrow-black.png);
+   	background-repeat: no-repeat;
+    width: 25px;
+    height: 17px;
+    background-size: 100% auto;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    margin-right: 5px;
+
 }
 .main-bnr-slide-item-img{
 	text-align: right;
@@ -64,13 +75,19 @@
 	padding: 0;
 	margin: 0 5px;
 }
+.slick-dots li button{
+	padding: 0;
+	margin: 0;
+	width: 12px;
+	height: 12px;
+}
 .main-bnr-slider ul.slick-dots ul li button:before,
 .main-bnr-slider ul.slick-dots ul li.slick-active button:before{
 	content: none;
 	opacity: 1!important;
 }
 .main-bnr-slider ul.slick-dots li.slick-active{
-	background: #f4b406;
+	background: #f00;
 }
 .main-bnr-slider .slick-dots li button:before{
 	content: none;
@@ -78,52 +95,136 @@
 
 .slick-prev,
 .slick-next {
-    background: #151320;
-    border-radius: 100% 100%;
-    color: #ffffff;
-    font-size: 24px;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    opacity: 1;
-    text-indent: -9999px;
+   width: 50px;
+   height: 50px;
+   padding: 0;
+   opacity: 1;
+   background: #f4b406;
+   border-radius: 100% 100%;
+   cursor: pointer;
+   z-index: 10;
+   opacity: 1!important;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.slick-next:before,
+.slick-prev:before{
+	content: none;
 }
 .slick-next:after,
 .slick-prev:after{
-	content: "\f104";
+	content: "";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #000;
-    font-size: 18px;
-    position: absolute;
+    color: #fff;
+    font-size: 30px;
     top: 10px;
     left: 0;
+    right: 0;
+    text-align: center;
 }
-.slick-next{
-	left: 20px;
-}
-.slick-prev{
-	right: 20px;
-}
-.slick-next:after{
-	content: "\f104";
+.slick-next:hover,
+.slick-prev:hover{
+	opacity: 1!important;
+	background: #f00;
 }
 .slick-prev:after{
+	content: "\f104";
+}
+.slick-next:after{
 	content: "\f105";
 }
+.slick-next{
+	right: 20px;
+}
+.slick-prev{
+	left: 20px;
+}
+
 .main-bnr-slider .slick-prev,
 .main-bnr-slider .slick-next{
-	margin-top: -20px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    opacity: 1;
+	margin-top: -25px;
+	opacity: 0!important;
+	transition: all 0.3s ease 0s;
 }
-.main-bnr-slider .slick-prev{
-	left: 30px;
+.main-bnr-slider:hover .slick-prev,
+.main-bnr-slider:hover .slick-next{
+	margin-top: 0;
+	opacity: 1!important;
+}
+
+
+/*Main content*/
+.main-content{
+	padding: 50px 0;
+}
+.fl-widget-title{
+	font-size: 20px;
+    margin-bottom: 15px;
+    background-color: #DC181F;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.fl-sec-hdr h4{
+	color: #39393c;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;	
+}
+.fl-sec-hdr h4::before {
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#000000), to(#ffffff)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #000000 0%, #ffffff 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 120px;
+}
+
+.popular-brands-logos{
+	padding-top: 25px;
+}
+.popular-brands-logos ul li{
+    float: left;
+    width: 25%;
+    border-bottom: solid 1px #d7d7d7;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    min-height: 107px;
+    text-align: center;
+    position: relative;
+}
+.popular-brands-logos ul li:nth-child(4n+4):after{
+	content: none;
+}
+.popular-brands-logos ul li:after{
+	content: "";
+	width: 1px;
+	top: 25px;
+	bottom: 25px;
+	background: #d7d7d7;
+	position: absolute;
+	right: 0;
+
+}
+.popular-brands-logos ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.popular-brands-logos ul li a strong {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+    color: #818181;
+    display: block;
+    text-transform: capitalize;
 }
