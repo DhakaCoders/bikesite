@@ -61,6 +61,30 @@
     top: 0;
    	left: 0;
 }
+.ftr-subscribe{
+	padding-top: 25px;
+}
+.ftr-subscribe form{
+	position: relative;
+}
+.ftr-subscribe form input[type="email"]{
+	width: 100%;
+	padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    height: 45px;
+    border: 1px solid #eee;
+}
+.ftr-subscribe form button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 45px;
+	background: #f4b406;
+	color: #fff;
+}
 
 
 .footer-mail{
