@@ -25,7 +25,15 @@ var windowWidth = $(window).width();
 
 
 //$("[data-fancybox]").fancybox({});
-
+if( $('.main-bnr-slider').length ){
+    $('.main-bnr-slider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
 
 /**
 Slick slider
