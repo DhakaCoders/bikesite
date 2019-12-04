@@ -68,12 +68,26 @@
 .main-bnr-slider ul.slick-dots li{
 	display: inline-block;
 	vertical-align: baseline;
-	width: 12px;
-	height: 12px;
-	background: #000;
-	border-radius: 100%;
+	width: 10px;
+	height: 10px;
+	background:rgba(255,255,255,0.3);
+	/*border-radius: 100%;*/
 	padding: 0;
-	margin: 0 5px;
+	margin: 0 20px;
+    position: relative;
+}
+.main-bnr-slider ul.slick-dots li:not(:last-child):after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 30px;
+    left: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin-left: 4px;
 }
 .slick-dots li button{
 	padding: 0;
@@ -87,7 +101,7 @@
 	opacity: 1!important;
 }
 .main-bnr-slider ul.slick-dots li.slick-active{
-	background: #f00;
+	background: #fff;
 }
 .main-bnr-slider .slick-dots li button:before{
 	content: none;
@@ -100,7 +114,6 @@
    padding: 0;
    opacity: 1;
    background: #f4b406;
-   border-radius: 100% 100%;
    cursor: pointer;
    z-index: 10;
    opacity: 1!important;

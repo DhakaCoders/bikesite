@@ -25,7 +25,7 @@
 .ftr-social ul li a{
 	width: 30px;
     height: 30px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     background: #484848;
     display: inline-block;
     position: relative;
@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     color: #f4b406;
+    border: 1px solid #555;
 }
 .ftr-mid-col ul li{
 	float: left;
