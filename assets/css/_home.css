@@ -383,19 +383,29 @@
 
 
 .popular-brands-logos{
-	padding-top: 25px;
+	padding-top: 0;
+    padding-left: 10px;
 }
 .popular-brands-logos ul li{
     float: left;
     width: 25%;
-    border-bottom: solid 1px #d7d7d7;
+    /*border-bottom: solid 1px #d7d7d7;*/
+    border: solid 1px #d7d7d7;
+    border-right: none;
     margin-bottom: 15px;
     padding-bottom: 12px;
     min-height: 107px;
     text-align: center;
     position: relative;
+    padding-top: 20px;
 }
-.popular-brands-logos ul li:nth-child(4n+4):after{
+.popular-brands-logos ul li:nth-child(4n+4){
+    border-right: 1px solid #ccc;
+}
+.popular-brands-logos ul li:nth-last-child(1){
+    border-right: 1px solid #ccc;
+}
+/*.popular-brands-logos ul li:nth-child(4n+4):after{
 	content: none;
 }
 .popular-brands-logos ul li:after{
@@ -407,7 +417,7 @@
 	position: absolute;
 	right: 0;
 
-}
+}*/
 .popular-brands-logos ul li a{
 	display: inline-block;
 	vertical-align: baseline;

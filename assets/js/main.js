@@ -34,6 +34,16 @@ if( $('.main-bnr-slider').length ){
       slidesToScroll: 1
     });
 }
+if( $('#btBikeGallerySlider').length ){
+    $('#btBikeGallerySlider').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
+
 
 if( $('#slider-range').length ){
     $( "#slider-range" ).slider({

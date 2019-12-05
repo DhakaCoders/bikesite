@@ -199,6 +199,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu{
     -ms-transform-origin: top;
     -webkit-transform-origin: top;
     opacity: 0;
+    border-top: 3px solid #f4b406;
 }
 nav.main-nav > ul > li.menu-item-has-children:hover > ul.sub-menu{
     transform: scale3d(1,1,1);

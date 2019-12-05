@@ -1,0 +1,84 @@
+.bt-bike-gallery-sec-lft-con{
+	float: left;
+	width: 53%;
+	margin-right: 2%;
+}
+.bt-bike-gallery-main-fea{
+	width: 45%;
+	float: right;
+	padding: 20px;
+	background: rgba(0,0,0,.8);
+	border-radius: 10px;
+	color: #fff;
+}
+#btBikeGallerySlider .slick-prev{
+	left: 0;
+}
+#btBikeGallerySlider .slick-next{
+	right: 0;
+}
+
+#btBikeGallerySlider .slick-next,
+#btBikeGallerySlider .slick-prev{
+	margin-top: -20px;
+	opacity: 0!important;
+}
+#btBikeGallerySlider:hover .slick-next,
+#btBikeGallerySlider:hover .slick-prev{
+	margin-top: 0;
+	opacity: 1!important;
+}
+.bt-bike-gallery-main-fea h4{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+}
+.specification-tbl li{
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+}
+.specification-tbl li span{
+	padding: 10px;
+}
+.specification-tbl li span:first-child{
+	width: 30%;
+	float: left;
+}
+.specification-tbl li span:last-child{
+	width: 70%;
+	float: right;
+}
+.bt-bike-gallery-main-fea h6{
+	padding-top: 15px;
+}
+
+.bt-full-specifications-entry-title{
+	padding: 10px;
+	color: #fff;
+	background:rgba(0,0,0,.8);
+	margin-bottom: 0;
+}
+.bt-full-specifications-row{
+	padding-bottom: 25px;
+}
+.specification-tbl-sub li{
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.specification-tbl li span:last-child{
+	padding-left: 20px;
+	border-left: 1px solid #ccc;
+}
+.specification-tbl-sub li span{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.bt-full-specifications-row h6{
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
