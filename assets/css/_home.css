@@ -80,10 +80,12 @@
 .main-bnr-slide-item-img{
 	text-align: right;
 }
-.main-bnr-slider ul.slick-dots{
+.main-bnr-slider ul.slick-dots,
+ul.slick-dots{
 	bottom: 5px;
 }
-.main-bnr-slider ul.slick-dots li{
+.main-bnr-slider ul.slick-dots li,
+ul.slick-dots li{
 	display: inline-block;
 	vertical-align: baseline;
 	width: 10px;
@@ -94,7 +96,8 @@
 	margin: 0 20px;
     position: relative;
 }
-.main-bnr-slider ul.slick-dots li:not(:last-child):after{
+.main-bnr-slider ul.slick-dots li:not(:last-child):after,
+ul.slick-dots li:not(:last-child):after{
     content: "";
     position: absolute;
     top: 50%;
@@ -114,14 +117,18 @@
 	height: 12px;
 }
 .main-bnr-slider ul.slick-dots ul li button:before,
-.main-bnr-slider ul.slick-dots ul li.slick-active button:before{
+.main-bnr-slider ul.slick-dots ul li.slick-active button:before,
+ul.slick-dots ul li button:before,
+ul.slick-dots ul li.slick-active button:before{
 	content: none;
 	opacity: 1!important;
 }
-.main-bnr-slider ul.slick-dots li.slick-active{
+.main-bnr-slider ul.slick-dots li.slick-active,
+ul.slick-dots li.slick-active{
 	background: #fff;
 }
-.main-bnr-slider .slick-dots li button:before{
+.main-bnr-slider .slick-dots li button:before,
+.slick-dots li button:before{
 	content: none;
 }
 
@@ -388,18 +395,21 @@
 }
 .popular-brands-logos ul li{
     float: left;
-    width: 25%;
+    width: 16.6666%;
     /*border-bottom: solid 1px #d7d7d7;*/
     border: solid 1px #d7d7d7;
     border-right: none;
     margin-bottom: 15px;
     padding-bottom: 12px;
-    min-height: 107px;
+    min-height: 145px;
     text-align: center;
     position: relative;
     padding-top: 20px;
 }
-.popular-brands-logos ul li:nth-child(4n+4){
+.popular-brands-logos ul li:nth-child(6n+1){
+    clear: left;
+}
+.popular-brands-logos ul li:nth-child(6n+6){
     border-right: 1px solid #ccc;
 }
 .popular-brands-logos ul li:nth-last-child(1){

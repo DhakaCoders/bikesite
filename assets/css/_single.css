@@ -14,17 +14,27 @@
 #btBikeGallerySlider .slick-prev{
 	left: 0;
 }
+#btRelatedBikesSlider .slick-prev{
+	left: 10px;
+}
 #btBikeGallerySlider .slick-next{
 	right: 0;
 }
+#btRelatedBikesSlider .slick-next{
+	right: 10px;
+}
 
 #btBikeGallerySlider .slick-next,
-#btBikeGallerySlider .slick-prev{
+#btBikeGallerySlider .slick-prev,
+#btRelatedBikesSlider .slick-next,
+#btRelatedBikesSlider .slick-prev{
 	margin-top: -20px;
 	opacity: 0!important;
 }
 #btBikeGallerySlider:hover .slick-next,
-#btBikeGallerySlider:hover .slick-prev{
+#btBikeGallerySlider:hover .slick-prev,
+#btRelatedBikesSlider:hover .slick-next,
+#btRelatedBikesSlider:hover .slick-prev{
 	margin-top: 0;
 	opacity: 1!important;
 }
@@ -80,5 +90,28 @@
 .bt-full-specifications-row h6{
 	margin-bottom: 0;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #ccc;
+	padding: 10px;
+    color: #fff;
+    background: rgba(0,0,0,.8);
+}
+
+.bt-related-bikes-section{
+	padding-top: 50px;
+}
+.bt-related-bikes-slide-item{
+	padding: 10px 10px;
+}
+#btRelatedBikesSlider ul.slick-dots{
+	position: static;
+}
+
+#btRelatedBikesSlider ul.slick-dots li{
+	background: #000;
+}
+#btRelatedBikesSlider ul.slick-dots li.slick-active{
+	background: #f4b406;
+}
+
+#btRelatedBikesSlider ul.slick-dots li:not(:last-child):after{
+	background: #ccc;
 }
