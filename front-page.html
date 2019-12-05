@@ -184,7 +184,7 @@
           </div>
         </div>
         <div class="col-sm-9">
-          <div class="main-con-section">
+          <div class="main-con-section search-filter-section">
             <div class="fl-sec-hdr">
               <h4>Search Your Dream Bike</h4>
             </div>
@@ -237,7 +237,7 @@
                     <label>CAPACITY -</label>
                     <div class="bt-selctpicker-ctlr">
                       <select class="selectpicker">
-                        <option selected="selected">Select Engine Capacity</option>
+                        <option selected="selected">Select Capacity</option>
                         <option value="100cc">100cc</option>
                         <option value="110cc">110cc</option>
                         <option value="125cc">125cc</option>
@@ -271,15 +271,18 @@
                       </select>
                     </div>
                   </div>
-                </div>
-                <div class="bt-search-range-slider">
-                  <div class="bt-search-range-slider-hdr">
-                    <label for="amount">Price range -</label>
-                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                  <div class="bt-filter-search-item bt-filter-search-item-price-range">
+                    <div class="bt-search-range-slider">
+                      <div class="bt-search-range-slider-hdr">
+                        <label for="amount">Price range - </label>
+                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                      </div>
+                      <div id="slider-range"></div>
+                    </div>
                   </div>
-                  <div id="slider-range"></div>
                 </div>
-                <div class="bt-search-selects-submi-btn">
+                
+                <div class="bt-search-selects-submit-btn">
                   <input type="submit" name="" value="Submit">
                 </div>
               </form>

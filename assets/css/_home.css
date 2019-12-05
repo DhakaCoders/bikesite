@@ -12,7 +12,7 @@
 .main-bnr-slide-item-des{
     display: flex;
 	width: 100%;
-    min-height: 300px;
+    min-height: 400px;
 	padding-right: 0;
     align-items: center;
     justify-content: center;
@@ -225,6 +225,14 @@
 .main-content{
     padding: 50px 0;
 }
+
+.search-filter-section {
+    background: rgba(255, 255, 255, .5);
+    margin-top: -108px;
+    padding: 20px 20px 40px;
+    border-radius: 10px 10px 0 0;
+    margin-left: -20px;
+}
 .fl-sec-hdr h4{
     color: #39393c;
     font-weight: bold;
@@ -246,31 +254,43 @@
 
 
 .bt-filter-search-item{
-    width: 33.33%;
+    width: 22%;
     float: left;
     padding: 0 10px;
 }
-.bt-search-range-slider{
-
+.bt-filter-search-item-price-range{
+    width: 34%;
 }
 .bt-filter-search-item label,
 .bt-search-range-slider label{
     text-transform: uppercase;
 }
 .bt-search-range-slider{
-    padding-top: 25px;
-    padding-left: 10px;
+    padding-top: 0;
+    padding-left: 0;
 }
 .bt-search-range-slider-hdr{
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
-.bt-search-selects-submi-btn{
+#slider-range{
+    margin-left: 10px;
+}
+.bt-search-selects-submit-btn{
     text-align: center;
     padding-top: 20px;
 }
-.bt-search-selects-submi-btn input[type="submit"]{
+.bt-search-range-slider-hdr input {
+    font-size: 14px;
+    padding-left: 5px;
+    line-height: 100%;
+    position: relative;
+    top: -2px;
+}
+.bt-search-selects-submit-btn input[type="submit"]{
     width: 150px;
-    height: 50px;
+    height: 45px;
     background: #f4b406;
     color: #fff;
     text-transform: uppercase;
