@@ -16,6 +16,7 @@
 	padding-right: 0;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 .main-bnr-slide-item-des{
     text-align: center;
@@ -40,6 +41,18 @@
 }
 .main-bnr-slide-item-des h5{
 	font-weight: 400;
+    color: #ed1d24;
+    text-transform: uppercase;
+    color: #ed1d24;
+    font-size: 16px;
+    letter-spacing: 8px;
+    font-weight: 900;
+}
+.main-bnr-slide-item-des h1{
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 8px;
+    font-weight: 900;
 }
 .main-bnr-slide-item-des a {
     border-radius: 26px;
@@ -236,6 +249,9 @@
     width: 100%;
     margin-top: -58px;
 }
+.search-filter-section .fl-sec-hdr h4{
+    color: #000;
+}
 .fl-sec-hdr h4{
     color: #39393c;
     font-weight: bold;
@@ -243,7 +259,7 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    text-transform: uppercase;  
+    text-transform: capitalize;  
 }
 .fl-sec-hdr h4::before {
     background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#000000), to(#ffffff)) repeat scroll 0 0;
