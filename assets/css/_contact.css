@@ -9,8 +9,16 @@
 	font-size: 16px;
 	color: #353535;
 }
+.bt-form-row{
+	margin-left: -10px;
+	margin-right: -10px;
+}
 .bt-form-d2-col{
 	padding-bottom: 20px;
+}
+.bt-form-row.bt-form-textarea-row{
+	margin-right: 0;
+	margin-left: 0;
 }
 
 .bt-contact-form input[type="text"],
@@ -113,4 +121,42 @@
     text-align: center;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+
+.bt-contact-tel,
+.bt-contact-mail {
+    position: relative;
+    padding: 10px 0 10px 50px;
+    margin-bottom: 10px;
+}
+.bt-contact-tel i,
+.bt-contact-mail i {
+    position: absolute;
+    font-size: 13px;
+    color: #f4b406;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    display: inline-block;
+    font-style: normal;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #f4b406;
+    border-radius: 100% 100%;
+    background: #fafafa;
+    left: 0;
+    top: 5px;
+}
+.bt-contact-tel i{
+	font-size: 15px;
+}
+.bt-contact-tel a, 
+.bt-contact-mail a {
+    color: #f4b406;
+}
+
+.bt-contact-lft-sliderbar .ftr-social{
+	padding-top: 20px;
 }
