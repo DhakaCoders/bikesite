@@ -95,6 +95,10 @@ if( $('#slider-range').length ){
       " - BDT " + $( "#slider-range" ).slider( "values", 1 ) );
 }
 
+$(".toTopBtn").click(function () {
+   $("html, body").animate({scrollTop: 0}, 1000);
+});
+
 
 /**
 Slick slider

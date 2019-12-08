@@ -3,6 +3,7 @@
 	margin: 150px 0 0;
 	padding: 50px 0 20px;
 	color: #999;
+	position: relative;
 }
 
 .ftr-aboutus-col{
@@ -127,4 +128,12 @@
 }
 .developedby{
 	text-align: right;
+}
+
+.toTopBtn{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 100;
+	cursor: pointer;
 }
