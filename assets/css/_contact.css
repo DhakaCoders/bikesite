@@ -1,0 +1,116 @@
+.bt-form-d2-col{
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+}
+.bt-contact-form label{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #353535;
+}
+.bt-form-d2-col{
+	padding-bottom: 20px;
+}
+
+.bt-contact-form input[type="text"],
+.bt-contact-form input[type="email"]{
+	border: 1px solid #ccc;
+	height: 45px;
+	padding: 5px 15px;
+	width: 100%;
+	font-size: 16px;
+}
+.bt-contact-form form .bootstrap-select button.btn {
+    height: 45px;
+    border-radius: 0;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+.bt-form-textarea-row{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.bt-form-textarea-row textarea{
+	width: 100%;
+	height: 120px;
+	padding: 15px;
+}
+
+.bt-contact-form input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+
+.bt-contact-form input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form input[type="email"]:-moz-placeholder { /* Firefox 18- */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+
+.bt-contact-form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+.bt-contact-form textarea:-moz-placeholder { /* Firefox 18- */
+  color: #262626;
+  opacity: 1;
+  font-weight: 300;
+}
+
+.bt-form-submit-btn{
+	text-align: center;
+	padding-top: 20px;
+}
+.bt-form-submit-btn input[type="submit"] {
+    width: 150px;
+    height: 45px;
+    background: #f4b406;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
