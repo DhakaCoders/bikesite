@@ -1,3 +1,10 @@
+
+/*.contact-main-content{
+	background: url(../images/Panigale-V2-01-banner-Full-1330x600.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	margin: 0 0 50px 0;
+}*/
 .bt-form-d2-col{
 	float: left;
 	width: 50%;
@@ -164,3 +171,8 @@
 .bt-contact-lft-sliderbar .dft-bike-img{
 	padding-top: 25px;
 }
+
+/*.contact-main-content .fl-sec-hdr h4,
+.contact-main-content .bt-contact-form label{
+	color: #fff;
+}*/
