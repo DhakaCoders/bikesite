@@ -1,10 +1,17 @@
 
-/*.contact-main-content{
-	background: url(../images/Panigale-V2-01-banner-Full-1330x600.jpg);
+.contact-main-content{
+	background: url(../images/Topographic-Map-Pattern-1-1.jpg);
 	background-position: center bottom;
 	background-size: cover;
-	margin: 0 0 50px 0;
-}*/
+	margin: 0 0 0 0;
+	background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: auto;
+    border-width: 0;
+    background-clip: padding-box;
+    border-color: #f1f1f1;
+}
 .bt-form-d2-col{
 	float: left;
 	width: 50%;
