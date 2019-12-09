@@ -1,6 +1,13 @@
 .hdr-topbar{
-	padding: 20px 0;
+	background: url(../images/hdr-top-bg.jpg);
+	background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 	border-bottom: 1px solid #ccc;
+}
+.hdr-topbar-inr{
+	padding: 20px 0;
+	background: rgba(255,255,255,.95);
 }
 .hdr-topbar-social{
 	float: left;
@@ -182,7 +189,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu{
 	top: 100%;
 	left: 0;
 	min-width: 205px;
-	padding: 20px 20px 10px 20px;
+	padding: 5px 0 0 0;
 	background: #fff;
 	border-top: 2px solid #fff;
 	z-index: 20;
@@ -208,12 +215,33 @@ nav.main-nav > ul > li.menu-item-has-children:hover > ul.sub-menu{
     opacity: 1;
 }
 nav.main-nav  ul.sub-menu li{
-	padding: 0 0 15px 0;
+	padding: 0 0 0 0;
 	display: block;
+	position: relative;
+	border-bottom: 1px solid #eee;
 }
 nav.main-nav ul.sub-menu li a{
-	display: inline-block;
-	vertical-align: baseline;
-	color: #004168;
+	color: #9e9ea1;
 	font-size: 14px;
+	display: block;
+	padding: 10px 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+nav.main-nav ul.sub-menu li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+    background: #f4b406;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+nav.main-nav ul.sub-menu li:hover:before {
+    height: 100%;
 }
