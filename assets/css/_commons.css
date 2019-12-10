@@ -174,7 +174,7 @@ form .bootstrap-select .caret::before {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    color: #710023;
+    color: #000;
     font-size: 22px;
     padding-right: 0;
     position: absolute;
@@ -188,7 +188,7 @@ form .bootstrap-select.open .caret::before{
 form .open > .dropdown-toggle.btn-default:hover,
 form .btn-default.active, form .btn-default:active, 
 form .open > .dropdown-toggle.btn-default{
-    color: #710023;
+    color: #000;
     background-color: transparent;
 }
 form .btn-default:hover,
@@ -199,7 +199,7 @@ form .btn-default:focus,
 .open>.dropdown-toggle.btn-default.focus, 
 .open>.dropdown-toggle.btn-default:focus,
 .open>.dropdown-toggle.btn-default:hover{
-    color: #710023;
+    color: #000;
     background-color: transparent;
     outline: 0!important;
 }

@@ -6,11 +6,17 @@ a,input,img,textarea,button{
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.scale{
+.scale,.bt-grd-item:hover .product-img a img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
+}
+.popular-brands-logos ul li:hover a figure img{
+	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
 }
 
 /**

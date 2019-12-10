@@ -50,6 +50,12 @@
 	font-size: 15px;
 	line-height: 100%;
 	position: relative;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.ftr-mid-col ul li:hover a{
+	padding-left: 20px;
 }
 .ftr-mid-col ul li a{
 	color: #999;

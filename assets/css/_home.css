@@ -197,6 +197,13 @@ ul.slick-dots li.slick-active{
 
 
 
+.bt-filter-search-item-price-range .ui-state-default, 
+.bt-filter-search-item-price-range .ui-widget-content .ui-state-default{
+    border-radius: 100% 100%;
+    background: #f4b406;
+    border-color: #f4b406;
+}
+
 /*Left Sidebar */
 
 .fl-widget-title{
@@ -336,6 +343,12 @@ ul.slick-dots li.slick-active{
     box-shadow: 0 2px 8px 0.5px rgba(0, 0, 0, 0.22);
     overflow: hidden;
 }
+.bt-grd-item .product-img a{
+    display: inline-block;
+    vertical-align: baseline;
+    overflow: hidden;
+    color: #f4b406;
+}
 .product-item-dec {
     left: 0;
     position: absolute;
@@ -431,6 +444,9 @@ ul.slick-dots li.slick-active{
 .popular-brands-logos ul li a{
 	display: inline-block;
 	vertical-align: baseline;
+}
+.popular-brands-logos ul li a figure{
+    overflow: hidden;
 }
 
 .popular-brands-logos ul li a strong {
