@@ -129,3 +129,25 @@
 #btRelatedBikesSlider ul.slick-dots li:not(:last-child):after{
 	background: #ccc;
 }
+.hasImg{
+	position: absolute;
+    bottom: 0;
+}
+.hasImg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.hasImg img{
+	opacity: 0.4;
+}
+.main-content {
+    position: relative;
+}
