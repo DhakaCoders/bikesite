@@ -1,12 +1,13 @@
 /**
 All Transitions
 */
-a,input,img,textarea,button{
+a,input,img,textarea,button,
+.bt-grd-item:hover{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.scale,.bt-grd-item:hover .product-img a img{
+.scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);

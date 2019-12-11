@@ -132,6 +132,22 @@ ul.slick-dots li.slick-active{
 	content: none;
 }
 
+#btRelatedBikesSlider ul.slick-dots{
+    position: static;
+}
+
+#btRelatedBikesSlider ul.slick-dots li,
+.compare-bikes-slider ul.slick-dots li{
+    background: #000;
+}
+#btRelatedBikesSlider ul.slick-dots li.slick-active,
+.compare-bikes-slider ul.slick-dots li.slick-active{
+    background: #f4b406;
+}
+#btRelatedBikesSlider ul.slick-dots li:not(:last-child):after,
+.compare-bikes-slider ul.slick-dots li:not(:last-child):after{
+    background: #000;
+}
 .slick-prev,
 .slick-next {
    width: 50px;
@@ -194,8 +210,28 @@ ul.slick-dots li.slick-active{
 	opacity: 1!important;
 }
 
+.compare-bikes-slider .slick-prev,
+.compare-bikes-slider .slick-next{
+    margin-top: -25px;
+    opacity: 0!important;
+    width: 40px;
+    height: 40px;
+}
+.compare-bikes-slider:hover .slick-prev,
+.compare-bikes-slider:hover .slick-next{
+    margin-top: 0;
+    opacity: 1!important;
+} 
 
-
+.compare-bikes-slider .slick-prev{
+    left: 8px;
+}
+.compare-bikes-slider .slick-next{
+    right: 8px;
+}
+.compare-bikes-slider ul.slick-dots{
+    position: static;
+}
 
 .bt-filter-search-item-price-range .ui-state-default, 
 .bt-filter-search-item-price-range .ui-widget-content .ui-state-default{
@@ -209,14 +245,15 @@ ul.slick-dots li.slick-active{
 .fl-widget-title{
 	font-size: 20px;
     margin-bottom: 0;
-    background-color: #DC181F;
+    background-color: #000;
     color: #fff;
     padding: 10px 10px;
+    text-transform: uppercase;
 }
 .fl-textwidget{
     border: 1px solid #ccc;
     border-top: none;
-    padding: 10px 10px 10px;
+    padding: 10px 15px 10px;
 }
 .fl-textwidget ul{
     margin: 0;
@@ -226,21 +263,24 @@ ul.slick-dots li.slick-active{
 .fl-textwidget ul li{
     position: relative;
     padding: 5px 0 5px 15px;
-    background: #000000;
+    border-bottom: 1px solid #ddd;
     color: #fff;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
+.fl-textwidget ul li:last-child{
+    border: none;
+}
 .fl-textwidget ul li:hover{
     padding-left: 20px;
 
 }
-.fl-textwidget ul li:nth-child(2n+2){
+/*.fl-textwidget ul li:nth-child(2n+2){
     background: #333131;
-}
+}*/
 .fl-textwidget ul li a{
-    color: #fff;
+    color: #000;
     display: block;
 }
 
@@ -252,10 +292,21 @@ ul.slick-dots li.slick-active{
 .main-content{
     padding: 50px 0;
 }
+.main-content.home-main-content{
+    padding-top: 0;
+}
 
 .search-filter-section {
-    background: rgba(255, 255, 255, .5);
-    padding: 20px 20px 25px;
+   /* background: rgba(255, 255, 255, .5);*/
+background: rgba(186,178,177,1);
+background: -moz-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(186,178,177,1)), color-stop(46%, rgba(158,154,153,0.17)), color-stop(62%, rgba(168,165,168,0.06)), color-stop(74%, rgba(214,211,214,0.06)), color-stop(100%, rgba(255,255,255,0.06)));
+background: -webkit-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: -o-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: -ms-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: linear-gradient(to bottom, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', endColorstr='#ffffff', GradientType=0 );
+    padding: 20px 20px 75px;
     border-radius: 10px 10px 0 0;
     margin-left: -20px;
     max-width: 1000px;
@@ -263,9 +314,65 @@ ul.slick-dots li.slick-active{
     width: 100%;
     margin-top: -58px;
 }
-.search-filter-section .fl-sec-hdr h4{
-    color: #000;
+.bt-search-filter-sec-hdr h4{
+    color: #dfd999;
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+    text-transform: capitalize;
 }
+.bt-search-filter-sec-hdr h4 span{
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0 37px;
+}
+.bt-search-filter-sec-hdr h4:after,
+.bt-search-filter-sec-hdr h4:before{
+    content: "";
+    background: #ddd;
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    height: 1px;
+    z-index: 15;    
+}
+.bt-search-filter-sec-hdr h4:after{
+    left: 0;
+
+}
+.bt-search-filter-sec-hdr h4:before{
+    right: 0;
+}
+.bt-search-filter-sec-hdr h4 span:before,
+.bt-search-filter-sec-hdr h4 span:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background: #ddd;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 15;
+}
+.bt-search-filter-sec-hdr h4 span:before {
+    left: 0;
+}
+.bt-search-filter-sec-hdr h4 span:after {
+    right: 0;
+}
+
+
+
+
 .fl-sec-hdr h4{
     color: #39393c;
     font-weight: bold;
@@ -342,6 +449,10 @@ ul.slick-dots li.slick-active{
     position: relative;
     box-shadow: 0 2px 8px 0.5px rgba(0, 0, 0, 0.22);
     overflow: hidden;
+    background: #F6F6F6;
+}
+.bt-grd-item:hover{
+    box-shadow: 0 2px 8px 0.5px rgba(0, 0, 0, 0.3);
 }
 .bt-grd-item .product-img a{
     display: inline-block;
@@ -354,7 +465,7 @@ ul.slick-dots li.slick-active{
     position: absolute;
     right: 0;
     text-align: center;
-    top: 37px;
+    top: 20px;
     padding: 0 10px;
 }
 
@@ -410,7 +521,7 @@ ul.slick-dots li.slick-active{
     float: left;
     width: 16.6666%;
     /*border-bottom: solid 1px #d7d7d7;*/
-    border: solid 1px #d7d7d7;
+    border: solid 1px #242424;
     border-right: none;
     margin-bottom: 15px;
     padding-bottom: 12px;
@@ -423,10 +534,10 @@ ul.slick-dots li.slick-active{
     clear: left;
 }
 .popular-brands-logos ul li:nth-child(6n+6){
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #242424;
 }
 .popular-brands-logos ul li:nth-last-child(1){
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #242424;
 }
 /*.popular-brands-logos ul li:nth-child(4n+4):after{
 	content: none;

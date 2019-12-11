@@ -101,7 +101,7 @@ nav.main-nav ul li a {
     vertical-align: baseline;
     vertical-align: baseline;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     position: relative;
@@ -134,7 +134,7 @@ nav.main-nav > ul > li.menu-item-has-children:after{
     text-decoration: inherit;
 /*--adjust as necessary--*/
     color: #000;
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     top: 0;
     right: 0;

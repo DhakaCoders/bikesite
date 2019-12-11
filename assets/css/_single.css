@@ -115,20 +115,9 @@
 .bt-related-bikes-slide-item{
 	padding: 10px 10px;
 }
-#btRelatedBikesSlider ul.slick-dots{
-	position: static;
-}
 
-#btRelatedBikesSlider ul.slick-dots li{
-	background: #000;
-}
-#btRelatedBikesSlider ul.slick-dots li.slick-active{
-	background: #f4b406;
-}
 
-#btRelatedBikesSlider ul.slick-dots li:not(:last-child):after{
-	background: #ccc;
-}
+
 .hasImg{
 	position: absolute;
     bottom: 0;
