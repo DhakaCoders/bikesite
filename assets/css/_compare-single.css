@@ -1,0 +1,57 @@
+.compare-single-page-con{
+	padding-bottom: 150px;
+}
+.compare-single-top-grd{
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+.compare-single-top-grd ul{
+	margin: 0 -8px;
+}
+.compare-single-top-grd ul li{
+	float: left;
+	width: 25%;
+	padding: 0 8px;
+}
+.compare-single-top-grd-col *{
+	display: block;
+	text-align: center;
+}
+.compare-single-top-grd-img{
+	padding-bottom: 20px;
+}
+ul.comparison-tbl-headers{
+	border-top: 1px solid #000;
+}
+ul.comparison-tbl-headers li,
+ul.comparison-tbl-data li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	border: 1px solid #000;
+	border-left: none;
+	border-top: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 10px;
+}
+ul.comparison-tbl-headers li:first-child,
+ul.comparison-tbl-data li:first-child{
+	justify-content: left;
+	border-left: 1px solid #000;
+}
+
+.dimension-divider{
+	text-align: center;
+	padding: 20px 10px;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+.dimension-divider h5{
+	margin-bottom: 0;
+}
+.comparison-tbl-data li span{
+	display: block;
+}

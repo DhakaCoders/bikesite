@@ -4,7 +4,9 @@ $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
-
+if($('.mhCol').length){
+    $('.mhCol').matchHeight();
+  };
 /**
 Responsive on 767px
 */
