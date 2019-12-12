@@ -55,3 +55,9 @@ ul.comparison-tbl-data li:first-child{
 .comparison-tbl-data li span{
 	display: block;
 }
+
+.compage-vs-titles span{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #f4b406;
+}
