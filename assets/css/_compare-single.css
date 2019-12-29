@@ -20,8 +20,14 @@
 .compare-single-top-grd-img{
 	padding-bottom: 20px;
 }
-ul.comparison-tbl-headers{
-	border-top: 1px solid #000;
+.comparison-tbls-data{
+	color: #3a3a3a;
+	background: #edf2f1;
+}
+ul.comparison-tbl-headers li{
+	border-top: 1px solid #000!important;
+	background: #242424;
+	color: #fff;
 }
 ul.comparison-tbl-headers li,
 ul.comparison-tbl-data li{
@@ -49,13 +55,27 @@ ul.comparison-tbl-data li:first-child{
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 }
+
+ul.comparison-tbl-headers li,
+ul.comparison-tbl-data li,
+.dimension-divider,
+ul.comparison-tbl-headers li:first-child,
+ul.comparison-tbl-data li:first-child,
+ul.comparison-tbl-headers{
+	border-color: #242424!important;
+}
+
 .dimension-divider h5{
 	margin-bottom: 0;
+	font-weight: 700;
+	color: #000;
 }
 .comparison-tbl-data li span{
 	display: block;
 }
-
+.compage-vs-titles{
+	text-align: center;
+}
 .compage-vs-titles span{
 	display: inline-block;
 	vertical-align: baseline;

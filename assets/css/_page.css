@@ -26,3 +26,63 @@
 }
 
 
+
+
+.bt-default-page-con p{
+	margin-bottom: 45px;
+}
+
+.bt-default-page-con h1,
+.bt-default-page-con h2,
+.bt-default-page-con h3{
+	margin-bottom: 25px;
+}
+.bt-default-page-con h4,
+.bt-default-page-con h5,
+.bt-default-page-con h6{
+	margin-bottom: 20px;
+}
+
+.bt-default-page-con ul li {
+	padding: 0 0 15px 28px;
+	position: relative;
+	line-height: 24px;
+}
+
+.bt-default-page-con ul li::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	background: url(../images/list-icon.svg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 14px;
+	height: 14px;
+}
+.bt-default-page-con ol,
+.bt-default-page-con ul{
+	list-style: none;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+.bt-default-page-con ol{
+	padding: 0 0 0 25px;
+	list-style: none;
+	counter-reset: my-awesome-counter;
+	-ms-counter-reset: my-awesome-counter;
+	-webkit-counter-reset: my-awesome-counter;
+}
+.bt-default-page-con ol li{
+	counter-increment: my-awesome-counter;
+	-ms-counter-increment: my-awesome-counter;
+	-webkit-counter-increment: my-awesome-counter;
+	padding-bottom: 15px;
+	line-height: 24px;
+}
+.bt-default-page-con ol li::before {
+	content: counter(my-awesome-counter) ". ";
+	color: #f4b406;
+	font-weight: 800;
+	margin-right: 15px;
+}
