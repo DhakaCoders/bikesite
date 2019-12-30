@@ -206,21 +206,21 @@ form .btn-default:focus,
 form .bootstrap-select .dropdown-toggle:focus{
 	outline: 0!important;
 }
-form  .dropdown-menu{
+form .dropdown-menu{
     margin: 0;
-    background-color: #cabb9f;
+    background-color: #ddd;
     border: none;
     border-radius: 0;
     box-shadow: none;
     padding: 12px 0 10px;
 }
-form  .dropdown-menu li{
+form .dropdown-menu li{
     position: relative;
     margin-bottom: 6px;
 }
-form  .dropdown-menu li a{
+form .dropdown-menu li a{
 	padding-top: 6px;
-	color: #fff;
+	color: #242424;
 }
 .dropdown-menu>.active>a, 
 .dropdown-menu>.active>a:focus, 
