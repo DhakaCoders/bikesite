@@ -3,8 +3,24 @@ if($('#preloader').length){
   $('#status1').fadeOut(); // will first fade out the loading animation 
   $('#preloader').delay(550).fadeOut('slow'); // will fade out the white DIV that covers the website. 
   $('body').delay(550).css({'overflow':'visible'});
-
+/*function timeout_trigger() {
+   $("#status1").css("left",p+"%");
+   $(".progress-view").text(p+"%");
+   if(p!=100) {
+       setTimeout('timeout_trigger()', 50);
+   }
+   p++;
+}
+timeout_trigger();*/
+/*function onLoad() { 
+  var now = new Date().getTime();
+  var page_load_time = now - performance.timing.navigationStart;
+  console.log("User-perceived page loading time: " + page_load_time);
+}
+onLoad();*/
 };
+
+
 
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);

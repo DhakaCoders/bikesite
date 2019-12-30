@@ -77,7 +77,40 @@ ul.comparison-tbl-headers{
 	text-align: center;
 }
 .compage-vs-titles span{
-	display: inline-block;
-	vertical-align: baseline;
-	color: #f4b406;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	width: 36px;
+    height: 36px;
+    background: #24272c;
+    border: 1px solid rgba(36,39,44,.15);
+    font-weight: 500;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.compage-vs-titles span:after,
+.compage-vs-titles span:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	height: 1px;
+	width: 50px;
+	background: #24272c;
+}
+.compage-vs-titles span:after{
+	left: 100%;
+}
+.compage-vs-titles span:before{
+	right: 100%;
 }

@@ -249,18 +249,23 @@ Page looader
     width:154px;
     height:151px;
     position:absolute;
-    left:50%; 
+/*    left:50%; 
     top:50%;
     background-repeat:no-repeat;
     background-position:center;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 0;
 }
-#status1 img{
+/*#status1 img{
 	-webkit-animation: preloadzoominout 2s infinite;
 	animation: preloadzoominout 2s infinite;
-}
+}*/
 
 @-webkit-@keyframes preloadzoominout {
     0% {
