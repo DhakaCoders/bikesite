@@ -1,4 +1,6 @@
-
+.home-page-bnr{
+    overflow: hidden;
+}
 .main-banner{
 	position: relative;
     background-position: bottom center!important;

@@ -18,22 +18,25 @@
 	background: rgba(0,0,0,.5);
 }
 .bnr-vdo{
+	overflow: hidden;
+}
+.bnr-vdo video{
+	min-height: 100%;
+	min-width: 100%;
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
-	bottom: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 	z-index: 0;
 }
-.bnr-vdo video{
-	width: 100%;
-	object-fit: fill;
-}
-.bnr-vdo video,
+/*.bnr-vdo video,
 .bnr-vdo video source{
-	/*width: 100%!important;*/
+	width: 100%!important;
 	height: 100%!important;
-}
+}*/
 
 
 .page-banner-con{
@@ -46,16 +49,22 @@
 }
 
 .not-found-page{
-	background: url(../images/body.png);
+	background: url(../images/hand_holding_keys_594354.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+
 	border-bottom: 1px solid #ccc;
 }
+
 .not-found-page-inr{
 	padding: 100px 0;
-	min-height: 450px;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: #ccc;
+	background: rgba(226,226,226,.89);
 }
 .not-found-page-inr div{
 	text-align: center;
@@ -66,9 +75,23 @@
 	margin: 0 auto;
 }
 
-
-
-
+.not-found-page-inr h1{
+	font-size: 180px;
+    color: #242424;
+}
+.not-found-page-inr h2{
+	color: #DE6C5D
+}
+.not-found-page-inr p{
+	color: #242424;
+}
+.not-found-page-inr p a{
+	color: #f4b406;
+	text-decoration: underline;
+}
+.not-found-page-inr p a:hover{
+	text-decoration: none;
+}
 .bt-default-page-con p{
 	margin-bottom: 45px;
 }

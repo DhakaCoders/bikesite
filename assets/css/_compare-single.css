@@ -77,17 +77,17 @@ ul.comparison-tbl-headers{
 	text-align: center;
 	    padding: 20px 20px 75px;
     border-radius: 10px 10px 0 0;
-    margin-top: -145px;
+    margin-top: -80px;
     position: relative;
     z-index: 9;
-background: rgba(186,178,177,1);
+/*background: rgba(186,178,177,1);
 background: -moz-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(186,178,177,1)), color-stop(46%, rgba(158,154,153,0.17)), color-stop(62%, rgba(168,165,168,0.06)), color-stop(74%, rgba(214,211,214,0.06)), color-stop(100%, rgba(255,255,255,0.06)));
 background: -webkit-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
 background: -o-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
 background: -ms-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
 background: linear-gradient(to bottom, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', endColorstr='#ffffff', GradientType=0 );	
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', endColorstr='#ffffff', GradientType=0 );	*/
 }
 .compare-vs-title{
 	display: inline-block;
@@ -132,7 +132,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 	-webkit-transform: translateY(-50%);
 	height: 1px;
 	width: 50px;
-	background: #24272c;
+	background: #000;
 }
 .compare-vs-titles span:after{
 	left: 100%;
@@ -155,6 +155,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 	align-items: center;
 	justify-content: center;
 	font-weight: 700;
+	color: #242424;
+	background: #ddd;
 }
 
 .compare-vs-titles-2.compare-vs-titles .compare-vs-title:first-child h5{

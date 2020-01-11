@@ -50,6 +50,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	width: 100%;
 	font-size: 16px;
 }
+.bt-contact-form input[type="text"]:focus,
+.bt-contact-form input[type="email"]:focus,
+.bt-form-textarea-row textarea:focus{
+  border-color: #353535;
+}
+.bt-form-submit-btn input[type="submit"]:hover{
+  background: #353535;
+}
 .bt-contact-form form .bootstrap-select button.btn {
     height: 45px;
     border-radius: 0;
@@ -185,8 +193,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 .bt-contact-lft-sliderbar .dft-bike-img{
 	padding-top: 25px;
 }
-
+.bt-contact-lft-sliderbar .bt-contact-tel i{
+  transform: rotate(90deg);
+}
 /*.contact-main-content .fl-sec-hdr h4,
 .contact-main-content .bt-contact-form label{
 	color: #fff;
 }*/
+.bt-contact-lft-sliderbar .ftr-social ul li a:hover{
+  border-color: #000;
+  background: #000;#484848
+}
+
+.bt-contact-lft-sliderbar .bt-contact-mail:hover i,
+.bt-contact-lft-sliderbar .bt-contact-mail:hover a,
+.bt-contact-lft-sliderbar .bt-contact-tel:hover i,
+.bt-contact-lft-sliderbar .bt-contact-tel:hover a{
+  color: #ffba00;
+  border-color: #ffba00;
+}
+
+.bt-contact-lft-sliderbar .bt-contact-mail:hover a,
+.bt-contact-lft-sliderbar .bt-contact-tel:hover a{
+  padding-left: 3px;
+}

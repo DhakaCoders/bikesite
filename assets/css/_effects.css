@@ -2,7 +2,8 @@
 All Transitions
 */
 a,input,img,textarea,button,
-.bt-grd-item:hover,.toTopBtn,ul.slick-dots li{
+.bt-grd-item:hover,.toTopBtn,ul.slick-dots li,
+.bt-contact-lft-sliderbar .bt-contact-mail i,.bt-contact-lft-sliderbar .bt-contact-tel i{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
