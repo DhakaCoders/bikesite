@@ -227,7 +227,27 @@ if( $('.responsive-slider').length ){
     });
 }
 
-    new WOW().init();
+if( $('#bt-vdo').length ){
+document.getElementById('bt-vdo').play();
+}
+/*var $video  = $('#bt-vdo'),
+    $window = $(window); 
+
+$(window).resize(function(){
+    //var height = $window.height();
+    //$video.css('height', height);
+
+    var videoWidth = $video.width(),
+        windowWidth = $window.width();
+    //marginLeftAdjust =   (windowWidth - videoWidth) / 2;
+
+    $video.css({
+        'width': windowWidth
+        //'marginLeft' : marginLeftAdjust
+    });
+}).resize();
+
+    new WOW().init();*/
 
 })(jQuery);
 

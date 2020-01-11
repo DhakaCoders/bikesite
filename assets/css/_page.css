@@ -17,6 +17,24 @@
 	bottom: 0;
 	background: rgba(0,0,0,.5);
 }
+.bnr-vdo{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+}
+.bnr-vdo video{
+	width: 100%;
+	object-fit: fill;
+}
+.bnr-vdo video,
+.bnr-vdo video source{
+	/*width: 100%!important;*/
+	height: 100%!important;
+}
+
 
 .page-banner-con{
 	position: relative;
