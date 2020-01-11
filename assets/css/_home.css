@@ -80,6 +80,11 @@
 .main-bnr-slide-item-img{
 	text-align: right;
 }
+.main-bnr-slider{
+    position: relative;
+}
+
+
 .main-bnr-slider ul.slick-dots,
 ul.slick-dots{
 	bottom: 5px;
@@ -169,12 +174,12 @@ ul.slick-dots li.slick-active{
 .slick-next:after,
 .slick-prev:after{
 	content: "";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    text-decoration: inherit;
     text-decoration: inherit;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     top: 10px;
     left: 0;
     right: 0;
@@ -183,7 +188,7 @@ ul.slick-dots li.slick-active{
 .slick-next:hover,
 .slick-prev:hover{
 	opacity: 1!important;
-	background: #f00;
+	background: #242424;
 }
 .slick-prev:after{
 	content: "\f104";
@@ -313,6 +318,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     margin: 0 auto;
     width: 100%;
     margin-top: -58px;
+    position: relative;
+    z-index: 9;
 }
 .bt-search-filter-sec-hdr h4{
     color: #dfd999;
@@ -332,7 +339,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     content: "";
     background: #ddd;
     position: absolute;
-    width: 30%;
+    width: 33%;
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -373,24 +380,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 
 
 
-.fl-sec-hdr h4{
-    color: #39393c;
-    font-weight: bold;
-    line-height: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    text-transform: capitalize;  
-}
-.fl-sec-hdr h4::before {
-    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#000000), to(#ffffff)) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #000000 0%, #ffffff 100%) repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    position: absolute;
-    width: 120px;
-}
 
 
 .bt-filter-search-item{

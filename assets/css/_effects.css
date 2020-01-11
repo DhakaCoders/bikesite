@@ -2,7 +2,7 @@
 All Transitions
 */
 a,input,img,textarea,button,
-.bt-grd-item:hover{
+.bt-grd-item:hover,.toTopBtn,ul.slick-dots li{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -33,4 +33,47 @@ nav.main-nav ul li a:hover,
 nav.main-nav ul li.current-menu-item a{
 
 }
+ul.slick-dots li:hover{
+	background:#f4b406!important;
+}
+.bt-search-selects-submit-btn input[type="submit"]:hover,
+.showrooms-btn button:hover,
+.ftr-social ul li a:hover{
+	background: #242424;
+}
+.ftr-social ul li a:hover{
+	border-color: #ccc;
+	color: #fff;
+}
 
+.hdr-topbar-social ul li a:hover,
+nav.main-nav ul.sub-menu li:hover a{
+	color: #242424;
+}
+
+nav.main-nav > ul > li:hover > a,
+.fl-textwidget ul li:hover a{
+	color: #f4b406;
+}
+
+.hdr-search button:hover{
+	background: #f4b406;
+}
+
+.hdr-search input[type="search"]:focus{
+	border-color: #242424;
+}
+
+.ftr-subscribe form input[type="email"]:focus{
+	border-color: #f4b406;
+}
+
+.footer-mail a:hover{
+	padding-left: 2px;
+}
+.developedby a:hover{
+	opacity: .9;
+}
+.toTopBtn:hover{
+	opacity: .7;
+}

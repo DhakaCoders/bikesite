@@ -66,12 +66,11 @@
 }
 .ftr-mid-col ul li a:before{
 	content: "\f105";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
     text-decoration: inherit;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     position: absolute;
     top: 0;
    	left: 0;

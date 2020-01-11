@@ -1,4 +1,6 @@
 (function($) {
+var windowWidth = $(window).width();
+
 if($('#preloader').length){
   $('#status1').fadeOut(); // will first fade out the loading animation 
   $('#preloader').delay(550).fadeOut('slow'); // will fade out the white DIV that covers the website. 
@@ -18,7 +20,28 @@ timeout_trigger();*/
   console.log("User-perceived page loading time: " + page_load_time);
 }
 onLoad();*/
-};
+
+/*var i = 0;
+
+$('img').each(function() {
+
+  $(this).one('load', function() {
+  i++;
+  console.log(i);
+  });
+
+});*/
+/*function timeout_trigger() {
+   $(".progress").css("max-width",p+"%");
+   $(".progress-view").text(p+"%");
+   if(p!=100) {
+       setTimeout('timeout_trigger()', 50);
+   }
+   p++;
+}
+timeout_trigger();*/
+
+}
 
 
 
@@ -32,7 +55,7 @@ if($('.mhCol').length){
 /**
 Responsive on 767px
 */
-var windowWidth = $(window).width();
+
 // if (windowWidth <= 767) {
 
   $('.toggle-btn').on('click', function(){
@@ -49,7 +72,7 @@ var windowWidth = $(window).width();
 
 
 //$("[data-fancybox]").fancybox({});
-if( $('.main-bnr-slider').length ){
+/*if( $('.main-bnr-slider').length ){
     $('.main-bnr-slider').slick({
       dots: true,
       infinite: false,
@@ -57,7 +80,7 @@ if( $('.main-bnr-slider').length ){
       slidesToShow: 1,
       slidesToScroll: 1
     });
-}
+}*/
 if( $('#btBikeGallerySlider').length ){
     $('#btBikeGallerySlider').slick({
       dots: false,

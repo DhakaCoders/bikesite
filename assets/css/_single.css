@@ -1,10 +1,10 @@
 .bt-bike-gallery-sec-lft-con{
 	float: left;
-	width: 53%;
+	width: 56%;
 	margin-right: 2%;
 }
 .bt-bike-gallery-main-fea{
-	width: 45%;
+	width: 42%;
 	float: right;
 	padding: 20px;
 	background: rgba(0,0,0,.8);
@@ -55,11 +55,13 @@
 	padding: 10px;
 }
 .specification-tbl li span:first-child{
-	width: 30%;
+	width: 42%;
 	float: left;
+	font-weight: 600;
+	font-size: 16px;
 }
 .specification-tbl li span:last-child{
-	width: 70%;
+	width: 58%;
 	float: right;
 }
 .bt-bike-gallery-main-fea h6{

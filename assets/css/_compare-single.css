@@ -73,15 +73,36 @@ ul.comparison-tbl-headers{
 .comparison-tbl-data li span{
 	display: block;
 }
-.compage-vs-titles{
+.compare-vs-titles{
 	text-align: center;
+	    padding: 20px 20px 75px;
+    border-radius: 10px 10px 0 0;
+    margin-top: -145px;
+    position: relative;
+    z-index: 9;
+background: rgba(186,178,177,1);
+background: -moz-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(186,178,177,1)), color-stop(46%, rgba(158,154,153,0.17)), color-stop(62%, rgba(168,165,168,0.06)), color-stop(74%, rgba(214,211,214,0.06)), color-stop(100%, rgba(255,255,255,0.06)));
+background: -webkit-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: -o-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: -ms-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+background: linear-gradient(to bottom, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', endColorstr='#ffffff', GradientType=0 );	
 }
-.compage-vs-titles span{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	width: 36px;
+.compare-vs-title{
+	display: inline-block;
+	vertical-align: baseline;
+	position: relative;
+}
+.compare-vs-title:last-child span{
+	display: none;
+}
+.compare-vs-titles span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 36px;
     height: 36px;
     background: #24272c;
     border: 1px solid rgba(36,39,44,.15);
@@ -94,10 +115,15 @@ ul.comparison-tbl-headers{
     z-index: 10;
     font-size: 15px;
     position: relative;
-    margin-bottom: 10px;
+    position: absolute;
+    right: -17px;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
-.compage-vs-titles span:after,
-.compage-vs-titles span:before{
+.compare-vs-titles span:after,
+.compare-vs-titles span:before{
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -108,9 +134,55 @@ ul.comparison-tbl-headers{
 	width: 50px;
 	background: #24272c;
 }
-.compage-vs-titles span:after{
+.compare-vs-titles span:after{
 	left: 100%;
 }
-.compage-vs-titles span:before{
+.compare-vs-titles span:before{
 	right: 100%;
+}
+
+.compare-vs-title{
+	width: 50%;
+	padding-left: 85px;
+	padding-right: 85px;
+	float: left;
+}
+
+.compare-vs-title h5{
+	border: 1px solid #ddd;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+
+.compare-vs-titles-2.compare-vs-titles .compare-vs-title:first-child h5{
+	justify-content: right;
+}
+.compare-vs-titles-2.compare-vs-titles .compare-vs-title:last-child h5{
+	justify-content: left;
+}
+
+.compare-vs-titles-3.compare-vs-titles .compare-vs-title{
+	width: 33.3333%;
+}
+
+.compare-vs-titles-3.compare-vs-titles .compare-vs-title h5{
+	font-size: 16px;
+}
+
+.compare-vs-titles-4.compare-vs-titles .compare-vs-title{
+	width: 25%;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.compare-vs-titles-4.compare-vs-titles span:after, 
+.compare-vs-titles-4.compare-vs-titles span:before{
+	width: 18px;
+}
+
+.compare-vs-titles-4.compare-vs-titles span{
+	right: -18px;
 }

@@ -4,6 +4,29 @@
 	background-position: center bottom;
 	background-repeat: repeat-x;
 }*/
+.page-banner{
+	position: relative;
+}
+.page-banner:after{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+}
+
+.page-banner-con{
+	position: relative;
+	z-index: 2;
+}
+
+.page-banner.compare-page-bnr .main-bnr-slide-item-des{
+	min-height: 500px;
+}
+
 .not-found-page{
 	background: url(../images/body.png);
 	border-bottom: 1px solid #ccc;
@@ -85,4 +108,31 @@
 	color: #f4b406;
 	font-weight: 800;
 	margin-right: 15px;
+}
+
+
+.fl-sec-hdr{
+    padding-left: 10px;
+}
+.fl-sec-hdr h4{
+    color: #39393c;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;  
+}
+.fl-sec-hdr h4::before {
+    background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#000000), to(#ffffff)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #000000 0%, #ffffff 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 120px;
+}
+.compare-single-page-con .fl-sec-hdr,
+.contact-main-content .fl-sec-hdr{
+	padding-left: 0;
 }
