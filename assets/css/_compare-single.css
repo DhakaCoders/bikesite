@@ -20,6 +20,9 @@
 .compare-single-top-grd-img{
 	padding-bottom: 20px;
 }
+.compare-single-top-grd-img img{
+	width: 100%;
+}
 .comparison-tbls-data{
 	color: #3a3a3a;
 	background: #edf2f1;
@@ -73,9 +76,13 @@ ul.comparison-tbl-headers{
 .comparison-tbl-data li span{
 	display: block;
 }
+.comparison-tbl-data li:first-child{
+	font-weight: 700;
+	font-size: 16px;
+}
 .compare-vs-titles{
 	text-align: center;
-	    padding: 20px 20px 75px;
+	    padding: 20px 20px 25px;
     border-radius: 10px 10px 0 0;
     margin-top: -80px;
     position: relative;
@@ -149,7 +156,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 }
 
 .compare-vs-title h5{
-	border: 1px solid #ddd;
+	border: 1px solid #f4b406;
 	padding: 10px;
 	display: flex;
 	align-items: center;
@@ -159,32 +166,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 	background: #ddd;
 }
 
-.compare-vs-titles-2.compare-vs-titles .compare-vs-title:first-child h5{
+.compare-vs-2 .compare-vs-titles .compare-vs-title:first-child h5{
 	justify-content: right;
 }
-.compare-vs-titles-2.compare-vs-titles .compare-vs-title:last-child h5{
+.compare-vs-2 .compare-vs-titles .compare-vs-title:last-child h5{
 	justify-content: left;
 }
 
-.compare-vs-titles-3.compare-vs-titles .compare-vs-title{
+.compare-vs-3 .compare-vs-titles .compare-vs-title{
 	width: 33.3333%;
 }
 
-.compare-vs-titles-3.compare-vs-titles .compare-vs-title h5{
+.compare-vs-3 .compare-vs-titles .compare-vs-title h5{
 	font-size: 16px;
 }
 
-.compare-vs-titles-4.compare-vs-titles .compare-vs-title{
+.compare-vs-4 .compare-vs-titles .compare-vs-title{
 	width: 25%;
 	padding-left: 35px;
 	padding-right: 35px;
 }
 
-.compare-vs-titles-4.compare-vs-titles span:after, 
-.compare-vs-titles-4.compare-vs-titles span:before{
+.compare-vs-4 .compare-vs-titles span:after, 
+.compare-vs-4 .compare-vs-titles span:before{
 	width: 18px;
 }
 
-.compare-vs-titles-4.compare-vs-titles span{
+.compare-vs-4 .compare-vs-titles span{
 	right: -18px;
+}
+
+.compare-vs-3 .compare-single-top-grd ul li{
+	width: 33.333%;
+}
+
+.compare-vs-3 ul.comparison-tbl-headers li,
+.compare-vs-3 ul.comparison-tbl-data li{
+	width: 25%;
 }

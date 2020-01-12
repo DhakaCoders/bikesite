@@ -1,8 +1,7 @@
 .footer-wrap{
-	background: url(../images/Panigale-V2-01-banner-Full-1330x600.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center; 
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important; 
 	margin: 0 0 0;
 	color: #999;
 	position: relative;
@@ -10,7 +9,7 @@
 
 .ftr-inner{
 	/*background: url(../images/footer-pattern-opacity.png);*/
-	background: rgba(0,0,0,.9);
+	background: rgba(0,0,0,.94);
 	padding: 50px 0 20px;
 }
 
