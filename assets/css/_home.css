@@ -336,6 +336,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     vertical-align: baseline;
     padding: 0 37px;
 }
+.bt-search-filter-sec-hdr h4 span br{
+    display: none;
+}
 .bt-search-filter-sec-hdr h4:after,
 .bt-search-filter-sec-hdr h4:before{
     content: "";
@@ -575,31 +578,87 @@ Start Responsive
 
 
 @media(max-width: 991px){
-
+    .bt-filter-search-item{
+        width: 50%!important;
+        padding-bottom: 15px;
+    }
+    .bt-search-selects-submit-btn input[type="submit"]{
+        width: 200px;
+    }
+    .bt-filter-search-item.bt-filter-search-item-price-range{
+        padding-top: 4px;
+    }
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before{
+        width: 32%;
+    }
 }
-
+@media(max-width: 869px){
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before{
+        width: 29%;
+    }
+}
 
 @media(max-width: 767px){
-
+    .bt-filter-search-item {
+        width: 100%!important;
+    }
+    .bt-filter-search-controller form .bootstrap-select button{
+        border-color: #242424;
+    }
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before{
+        width: 27%;
+    }
 }
 
-
+@media(max-width: 700px){
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before{
+        width: 25%;
+    }
+}
 
 @media(max-width: 639px){
-
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before{
+        width: 22%;
+    }
 }
 
 
 
 @media(max-width: 575px){
-
+    .bt-filter-search-item label, 
+    .bt-search-range-slider label{
+        display: block;
+    }
+    .bt-search-range-slider-hdr{
+        display: block;
+    }
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before{
+        width: 16%;
+    }
 
 }
 
 
 @media(max-width: 479px){
-
-
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before{
+        width: 40px;
+    }
+    .bt-search-filter-sec-hdr h4:after{
+        left: -10px;
+    }
+    .bt-search-filter-sec-hdr h4:before{
+        right: -10px;
+    }
+    .bt-search-filter-sec-hdr h4 span br{
+        display: block;
+    }
 }
 
 
