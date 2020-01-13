@@ -27,6 +27,7 @@
 
 </head>
 <body>
+<div class="bdoverlay"></div>
 <header class="header">
   <div class="hdr-topbar">
     <div class="hdr-topbar-inr">
@@ -34,19 +35,19 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="hdr-topbar-inner clearfix">
-              <div class="hdr-topbar-social">
+              <div class="hdr-topbar-social hide-sm">
                 <ul class="ulc">
                   <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 </ul>
               </div>
-              <div class="showrooms-btn">
+              <div class="showrooms-btn hide-sm">
                 <button><i class="fas fa-store"></i>Showrooms</button>
               </div>
               <div class="hdr-search">
                 <form>
-                  <input type="search" name="">
+                  <input type="search" name="" placeholder="Search here...">
                   <button>
                     <i class="fa fa-search"></i>
                   </button>
@@ -69,34 +70,55 @@
                 </div>
               </div>
               <div class="hdr-rgt">
+                <div class="line-icon show-sm">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
                 <nav class="main-nav">
-                  <ul class="clearfix">
-                    <li><a href="#">Home</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Bikes</a>
-                      <ul class="sub-menu">
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Scooters</a>
-                      <ul class="sub-menu">
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                        <li><a href="#">sub menu</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">Compare</a></li>
-                    <li><a href="#">User Review</a></li>
-                    <li><a href="#">Help Post</a></li>
-                  </ul>
+                  <div class="main-nav-inr">
+                    <div class="closebtn show-sm">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <ul class="clearfix">
+                      <li><a href="#">Home</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Bikes</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Scooters</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                          <li><a href="#">sub menu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Offers</a></li>
+                      <li><a href="#">Compare</a></li>
+                      <li><a href="#">User Review</a></li>
+                      <li><a href="#">Help Post</a></li>
+                    </ul>
+                  </div>
+                  <div class="hdr-topbar-social show-sm">
+                    <ul class="ulc">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                    <div class="showrooms-btn">
+                      <button><i class="fas fa-store"></i>Showrooms</button>
+                    </div>
+                  </div>
                 </nav>
               </div>
             </div>
@@ -813,7 +835,7 @@
   <div class="ftr-inner">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-md-4">
             <div class="ftr-col">
               <div class="ftr-aboutus-col">
                 <h6>About Us</h6>
@@ -825,9 +847,9 @@
               </div>
             </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-6 col-md-5">
           <div class="ftr-col ftr-mid-col">
-            <h6>Lorem Ipsum</h6>
+            <h6>Quick Links</h6>
             <ul class="clearfix ulc">
               <li><a href="#">Showroom List</a></li>
               <li><a href="#">Latest Price</a></li>
@@ -844,8 +866,8 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="ftr-col">
+        <div class="col-sm-12 col-md-3">
+          <div class="ftr-col ftr-rgt-col">
             <h6>Follow Us</h6>
             <div class="ftr-social">
               <ul class="clearfix ulc">

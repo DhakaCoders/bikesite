@@ -560,3 +560,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     display: block;
     text-transform: capitalize;
 }
+
+
+/*
+-------------------
+Start Responsive
+-------------------
+*/
+
+@media(max-width: 1199px){
+
+
+}
+
+
+@media(max-width: 991px){
+
+}
+
+
+@media(max-width: 767px){
+
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
+}
