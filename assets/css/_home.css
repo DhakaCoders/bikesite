@@ -439,11 +439,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     width: 33.3333%;
     padding: 0 10px 20px;
 }
+.bt-grd-controller > ul > li:nth-child(3n+1){
+    clear: left;
+}
 .bt-grd-item{
     position: relative;
     box-shadow: 0 2px 8px 0.5px rgba(0, 0, 0, 0.22);
     overflow: hidden;
     background: #F6F6F6;
+    text-align: center;
 }
 .bt-grd-item:hover{
     box-shadow: 0 2px 8px 0.5px rgba(0, 0, 0, 0.3);
@@ -514,7 +518,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 .popular-brands-logos ul li{
     float: left;
     width: 16.6666%;
-    /*border-bottom: solid 1px #d7d7d7;*/
     border: solid 1px #242424;
     border-right: none;
     margin-bottom: 15px;
@@ -523,6 +526,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     text-align: center;
     position: relative;
     padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .popular-brands-logos ul li:nth-child(6n+1){
     clear: left;
@@ -533,19 +538,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 .popular-brands-logos ul li:nth-last-child(1){
     border-right: 1px solid #242424;
 }
-/*.popular-brands-logos ul li:nth-child(4n+4):after{
-	content: none;
-}
-.popular-brands-logos ul li:after{
-	content: "";
-	width: 1px;
-	top: 25px;
-	bottom: 25px;
-	background: #d7d7d7;
-	position: absolute;
-	right: 0;
 
-}*/
 .popular-brands-logos ul li a{
 	display: inline-block;
 	vertical-align: baseline;
@@ -564,6 +557,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     text-transform: capitalize;
 }
 
+.brands-more-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brands-more-items a{
+    position: relative;
+    padding-right: 20px;
+    color: #f4b406;
+}
+.brands-more-items a strong{
+    color: inherit!important;
+}
+.brands-more-items a:after{
+    content: "\f101";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    text-decoration: inherit;
+    font-size: 18px;
+    padding-right: 0;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    line-height: 15px;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.brands-more-items a:hover{
+    color: ;
+}
+.brands-more-items a:hover:after{
+    right: -3px;
+}
 
 /*
 -------------------
@@ -572,7 +599,15 @@ Start Responsive
 */
 
 @media(max-width: 1199px){
-
+    .bt-grd-controller > ul > li{
+        width: 50%;
+    }
+    .bt-grd-controller > ul > li:nth-child(3n+1){
+        clear: initial;
+    }
+    .bt-grd-controller > ul > li:nth-child(2n+1){
+        clear: left;
+    }
 
 }
 
@@ -591,6 +626,37 @@ Start Responsive
     .bt-search-filter-sec-hdr h4:after, 
     .bt-search-filter-sec-hdr h4:before{
         width: 32%;
+    }
+    .fl-bike-brands-textwidget ul:after,
+    .fl-bike-brands-textwidget ul:before{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .fl-bike-brands-textwidget ul li{
+        float: left;
+        width: 20%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .fl-textwidget ul li:last-child{
+        border-bottom: 1px solid #ddd;
+    }
+    .fl-sidebar{
+        margin-bottom: 25px;
+    }
+    .bt-grd-controller ul{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .fl-sec-hdr {
+        padding-left: 0;
+    }
+    .fl-lft-sidebar{
+        padding-bottom: 30px;
+    }
+    .popular-brands-logos{
+        padding-left: 0;
     }
 }
 @media(max-width: 869px){
@@ -611,6 +677,24 @@ Start Responsive
     .bt-search-filter-sec-hdr h4:before{
         width: 27%;
     }
+    .popular-brands-logos ul li{
+        width: 20%;
+    }
+    .popular-brands-logos ul li:nth-child(6n+1) {
+        clear: initial;
+    }
+    .popular-brands-logos ul li:nth-child(5n+1) {
+        clear: left;
+    }
+    .popular-brands-logos ul li:nth-child(6n+6) {
+        border-right: 0;
+    }
+    .popular-brands-logos ul li:nth-child(5n+5) {
+        border-right: 1px solid #242424;
+    }
+    .popular-brands-logos ul li:last-of-type{
+        border-right: 1px solid #242424;
+    }
 }
 
 @media(max-width: 700px){
@@ -624,6 +708,29 @@ Start Responsive
     .bt-search-filter-sec-hdr h4:after, 
     .bt-search-filter-sec-hdr h4:before{
         width: 22%;
+    }
+    .bt-grd-controller > ul > li {
+        width: 100%;
+    }
+    .bt-grd-controller > ul > li .bt-grd-item{
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .popular-brands-logos ul li {
+        width: 25%;
+    }
+    .popular-brands-logos ul li:nth-child(5n+1) {
+        clear: initial;
+    }
+    .popular-brands-logos ul li:nth-child(4n+1) {
+        clear: left;
+    }
+    .popular-brands-logos ul li:nth-child(5n+5) {
+        border-right: 0;
+    }
+    .popular-brands-logos ul li:nth-child(4n+4) {
+        border-right: 1px solid #242424;
     }
 }
 
@@ -642,6 +749,21 @@ Start Responsive
         width: 16%;
     }
 
+    .popular-brands-logos ul li {
+        width: 33.3333%;
+    }
+    .popular-brands-logos ul li:nth-child(4n+1) {
+        clear: initial;
+    }
+    .popular-brands-logos ul li:nth-child(3n+1) {
+        clear: left;
+    }
+    .popular-brands-logos ul li:nth-child(4n+4) {
+        border-right: 0;
+    }
+    .popular-brands-logos ul li:nth-child(3n+3) {
+        border-right: 1px solid #242424;
+    }
 }
 
 
@@ -656,8 +778,35 @@ Start Responsive
     .bt-search-filter-sec-hdr h4:before{
         right: -10px;
     }
-    .bt-search-filter-sec-hdr h4 span br{
-        display: block;
+
+    .bt-search-filter-sec-hdr h4:after, 
+    .bt-search-filter-sec-hdr h4:before,
+    .bt-search-filter-sec-hdr h4 span:before, 
+    .bt-search-filter-sec-hdr h4 span:after {
+       display: none;
+    }
+    .bt-search-filter-sec-hdr h4 span{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .search-filter-section{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .popular-brands-logos ul li {
+        width: 50%;
+    }
+    .popular-brands-logos ul li:nth-child(3n+1) {
+        clear: initial;
+    }
+    .popular-brands-logos ul li:nth-child(2n+1) {
+        clear: left;
+    }
+    .popular-brands-logos ul li:nth-child(3n+3) {
+        border-right: 0;
+    }
+    .popular-brands-logos ul li:nth-child(2n+2) {
+        border-right: 1px solid #242424;
     }
 }
 
