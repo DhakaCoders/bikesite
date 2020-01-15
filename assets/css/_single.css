@@ -1,3 +1,7 @@
+
+.bt-bike-gallery-section {
+	padding-bottom: 20px;
+}
 .bt-bike-gallery-sec-lft-con{
 	float: left;
 	width: 56%;
@@ -10,6 +14,13 @@
 	background: rgba(0,0,0,.8);
 	border-radius: 10px;
 	color: #fff;
+}
+.bt-bike-gallery-full-img-item{
+	text-align: center;
+}
+.bt-bike-gallery-full-img-item img{
+	display: inline-block;
+	vertical-align: baseline;
 }
 #btBikeGallerySlider .slick-prev{
 	left: 0;
@@ -102,6 +113,13 @@
 	position: relative;
 	border-top: 1px solid #e0e0e0;
 }
+.bt-related-bikes-section .fl-sec-hdr{
+	padding-left: 0;
+}
+.bt-related-bikes-slider{
+	margin-left: -10px;
+	margin-right: -10px;
+}
 .bt-related-bikes-section:before {
     background-image: url(../images/shadow.png);
     background-position: center bottom;
@@ -141,4 +159,74 @@
 }
 .main-content {
     position: relative;
+}
+
+
+
+@media(max-width: 1199px){
+
+
+}
+
+@media(max-width: 1023px){
+	.bt-bike-gallery-sec-lft-con{
+		width: 100%;
+		margin-right: 0;
+	}
+	.bt-bike-gallery-main-fea{
+		width: 100%;
+	}
+	.bt-bike-gallery-section{
+		padding-bottom: 40px;
+	}
+	.bt-bike-gallery-slider .slick-dots{
+		z-index: 20;
+		bottom: 50px;
+	}
+}
+@media(max-width: 991px){
+
+}
+
+
+@media(max-width: 767px){
+
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+	.bt-bike-gallery-slider .slick-dots {
+	    bottom: 25px;
+	}
+	.bt-bike-gallery-main-fea h4{
+		text-align: center;
+	}
+
+}
+
+
+@media(max-width: 479px){
+	.specification-tbl li span:first-child{
+		font-size: 15px;
+	}
+	.specification-tbl li span:first-child{
+		width: 43%;
+	}
+	.specification-tbl li span:last-child{
+		width: 57%;
+	}
+
+}
+
+
+
+@media(max-width: 359px){
+
 }

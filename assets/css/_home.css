@@ -130,9 +130,19 @@ ul.slick-dots ul li.slick-active button:before{
 	content: none;
 	opacity: 1!important;
 }
-.main-bnr-slider ul.slick-dots li.slick-active,
-ul.slick-dots li.slick-active{
+.main-bnr-slider ul.slick-dots li.slick-active{
 	background: #fff;
+}
+ul.slick-dots li{
+    background: #000;
+} 
+ul.slick-dots li:not(:last-child):after {
+    background: #000;
+}
+
+
+ul.slick-dots li.slick-active{
+    background: #f4b406;
 }
 .main-bnr-slider .slick-dots li button:before,
 .slick-dots li button:before{

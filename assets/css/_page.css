@@ -162,7 +162,8 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    text-transform: capitalize;  
+    text-transform: capitalize; 
+    line-height: 1.1; 
 }
 .fl-sec-hdr h4::before {
     background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#000000), to(#ffffff)) repeat scroll 0 0;
@@ -209,8 +210,27 @@ Start Responsive
 
 
 @media(max-width: 575px){
-
-
+	.bt-default-page-con ol,
+	.bt-default-page-con ul{
+		padding-left: 20px;
+	}
+	.bt-default-page-con ol li::before {
+	    margin-right: 10px;
+	}
+	.not-found-page-inr h1 {
+	    font-size: 140px;
+	}
+	.slick-prev, .slick-next{
+		width: 35px!important;
+		height: 35px!important;
+	}
+	ul.slick-dots li:not(:last-child):after{
+		content: none!important;
+	}
+	ul.slick-dots li{
+		margin-left: 5px!important;
+		margin-right: 5px!important;
+	}
 }
 
 
@@ -222,5 +242,10 @@ Start Responsive
 
 
 @media(max-width: 359px){
-
+	.not-found-page-inr h1 {
+	    font-size: 120px;
+	}
+	.not-found-page-inr h2{
+		font-size: 28px;
+	}
 }

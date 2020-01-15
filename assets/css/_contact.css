@@ -232,21 +232,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 
 
 @media(max-width: 991px){
-  .hide-sm{
-    display: none!important;
-  }
-  .show-sm{
-    display: block!important;
-  }
+
 }
 
 
 @media(max-width: 767px){
-  .hide-xs{
-    display: none!important;
+  .bt-contact-lft-sliderbar{
+    padding-top: 50px;
   }
-  .show-xs{
-    display: block!important;
+  .bt-contact-page-con .fl-sec-hdr h4,
+  .bt-contact-lft-sliderbar .fl-sec-hdr h4,
+  .bt-contact-lft-sliderbar{
+    text-align: center;
+  }
+  .bt-contact-tel,.bt-contact-mail{
+    display: inline-block;
+  }
+  .bt-contact-tel{
+    padding-right: 20px;
   }
 }
 
@@ -259,14 +262,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 
 
 @media(max-width: 575px){
-  h1{
-    font-size: 37px;
+  .bt-form-d2-col{
+    width: 100%;
   }
-  h2{
-    font-size: 32px ;
+  .bt-contact-page-con .fl-sec-hdr h4,
+  .bt-contact-lft-sliderbar .fl-sec-hdr h4,
+  .bt-contact-lft-sliderbar{
+    text-align: left;
   }
-  h3{
-    font-size: 29px;
+  .bt-contact-tel,.bt-contact-mail{
+    display: block;
+  }
+  .bt-contact-tel{
+    padding-right: 0;
   }
 
 }

@@ -88,3 +88,51 @@
 	font-size: 13px;
 	text-align: center;
 }
+
+
+
+
+@media(max-width: 1199px){
+	.compare-bikes-filter-col{
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+}
+
+
+@media(max-width: 991px){
+
+}
+
+
+@media(max-width: 767px){
+
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+	.compare-bikes-filter-col {
+	    width: 100%;
+	}
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
+}
