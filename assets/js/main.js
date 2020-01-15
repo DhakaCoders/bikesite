@@ -5,42 +5,6 @@ if($('#preloader').length){
   $('#status1').fadeOut(); // will first fade out the loading animation 
   $('#preloader').delay(550).fadeOut('slow'); // will fade out the white DIV that covers the website. 
   $('body').delay(550).css({'overflow':'visible'});
-/*function timeout_trigger() {
-   $("#status1").css("left",p+"%");
-   $(".progress-view").text(p+"%");
-   if(p!=100) {
-       setTimeout('timeout_trigger()', 50);
-   }
-   p++;
-}
-timeout_trigger();*/
-/*function onLoad() { 
-  var now = new Date().getTime();
-  var page_load_time = now - performance.timing.navigationStart;
-  console.log("User-perceived page loading time: " + page_load_time);
-}
-onLoad();*/
-
-/*var i = 0;
-
-$('img').each(function() {
-
-  $(this).one('load', function() {
-  i++;
-  console.log(i);
-  });
-
-});*/
-/*function timeout_trigger() {
-   $(".progress").css("max-width",p+"%");
-   $(".progress-view").text(p+"%");
-   if(p!=100) {
-       setTimeout('timeout_trigger()', 50);
-   }
-   p++;
-}
-timeout_trigger();*/
-
 }
 
 
@@ -51,7 +15,7 @@ $('.navbar-toggle').on('click', function(){
 	
 if($('.mhCol').length){
     $('.mhCol').matchHeight();
-  };
+};
 
 
 /**
@@ -70,12 +34,22 @@ if (windowWidth <= 991) {
     $('body').removeClass('active-scroll-off');
     $('.line-icon').removeClass('active-collapse');
   });
+  
   $('li.menu-item-has-children > a').on('click', function(e){
     e.preventDefault();
+    $('li.menu-item-has-children .sub-menu').slideUp(300);
     $(this).toggleClass('sub-menu-active');
-    $(this).next().slideToggle(300);
+    $(this).next().slideDown(300);
 
   });
+}
+
+
+
+if (windowWidth <= 991) {
+  if($('.fl-textwidget.fl-bike-brands-textwidget').length){
+    $('.fl-textwidget.fl-bike-brands-textwidget ul li').matchHeight();
+  }
 }
 
 /**

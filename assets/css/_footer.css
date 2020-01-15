@@ -202,6 +202,19 @@ Start Responsive
 	.developedby{
 		padding-top: 10px;
 	}
+	.ftr-col{
+		max-width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.ftr-aboutus-col{
+		padding-right: 0;
+	}
+	.ftr-col h6{
+		padding-bottom: 10px;
+		border-bottom: 1px solid #fff;
+		text-align: left;
+	}
 }
 
 
@@ -215,6 +228,9 @@ Start Responsive
 @media(max-width: 575px){
 	.ftr-mid-col ul li{
 		width: 100%;
+	}
+	.ftr-col h6{
+		text-align: center;
 	}
 
 }

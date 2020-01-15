@@ -598,6 +598,9 @@ Start Responsive
 -------------------
 */
 
+@media(max-width: 1299px){
+
+}
 @media(max-width: 1199px){
     .bt-grd-controller > ul > li{
         width: 50%;
@@ -613,6 +616,7 @@ Start Responsive
 
 
 @media(max-width: 991px){
+    
     .bt-filter-search-item{
         width: 50%!important;
         padding-bottom: 15px;
@@ -626,6 +630,21 @@ Start Responsive
     .bt-search-filter-sec-hdr h4:after, 
     .bt-search-filter-sec-hdr h4:before{
         width: 32%;
+    }
+    .bt-grd-controller ul{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .fl-sec-hdr {
+        padding-left: 0;
+    }
+    
+    .popular-brands-logos{
+        padding-left: 0;
+    }
+
+    .fl-lft-sidebar{
+        padding-bottom: 30px;
     }
     .fl-bike-brands-textwidget ul:after,
     .fl-bike-brands-textwidget ul:before{
@@ -645,18 +664,35 @@ Start Responsive
     .fl-sidebar{
         margin-bottom: 25px;
     }
-    .bt-grd-controller ul{
-        margin-left: -10px;
-        margin-right: -10px;
+    .fl-textwidget.fl-bike-brands-textwidget{
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
-    .fl-sec-hdr {
-        padding-left: 0;
+    .fl-textwidget.fl-bike-brands-textwidget ul{
+        border-left: 1px solid #ddd;
+        text-align: center;
     }
-    .fl-lft-sidebar{
-        padding-bottom: 30px;
+    .fl-textwidget.fl-bike-brands-textwidget ul li{
+        border-top: none;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .popular-brands-logos{
-        padding-left: 0;
+    .fl-textwidget.fl-bike-brands-textwidget ul li:nth-child(1),
+    .fl-textwidget.fl-bike-brands-textwidget ul li:nth-child(2),
+    .fl-textwidget.fl-bike-brands-textwidget ul li:nth-child(3),
+    .fl-textwidget.fl-bike-brands-textwidget ul li:nth-child(4),
+    .fl-textwidget.fl-bike-brands-textwidget ul li:nth-child(5){
+        border-top: 1px solid #ddd;
+    }
+    
+    .fl-textwidget.fl-bike-brands-textwidget ul li:nth-child(5n+1){
+        clear: left;
+    }
+    .bt-bike-brands-xs{
+        padding-top: 15px;
     }
 }
 @media(max-width: 869px){
@@ -695,6 +731,7 @@ Start Responsive
     .popular-brands-logos ul li:last-of-type{
         border-right: 1px solid #242424;
     }
+
 }
 
 @media(max-width: 700px){
@@ -711,11 +748,6 @@ Start Responsive
     }
     .bt-grd-controller > ul > li {
         width: 100%;
-    }
-    .bt-grd-controller > ul > li .bt-grd-item{
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .popular-brands-logos ul li {
         width: 25%;
@@ -763,6 +795,10 @@ Start Responsive
     }
     .popular-brands-logos ul li:nth-child(3n+3) {
         border-right: 1px solid #242424;
+    }
+    .bt-search-range-slider-hdr input{
+        display: block;
+        padding-left: 0;
     }
 }
 

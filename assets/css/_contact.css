@@ -217,3 +217,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 .bt-contact-lft-sliderbar .bt-contact-tel:hover a{
   padding-left: 3px;
 }
+
+
+
+@media(max-width: 1199px){
+  .hide-md{
+    display: none!important;
+  }
+  .show-md{
+    display: block!important;
+  }
+
+}
+
+
+@media(max-width: 991px){
+  .hide-sm{
+    display: none!important;
+  }
+  .show-sm{
+    display: block!important;
+  }
+}
+
+
+@media(max-width: 767px){
+  .hide-xs{
+    display: none!important;
+  }
+  .show-xs{
+    display: block!important;
+  }
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+  h1{
+    font-size: 37px;
+  }
+  h2{
+    font-size: 32px ;
+  }
+  h3{
+    font-size: 29px;
+  }
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
+}

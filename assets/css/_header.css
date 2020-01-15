@@ -300,7 +300,7 @@ Start Responsive
 	    color: #ffffff;
 	    font-size: 18px;
 	    line-height: 20px;
-	    width: 250px;
+	    max-width: 250px;
 	    width: 100%;
 	    z-index: -1;
 	    opacity: 0;
@@ -500,7 +500,12 @@ Start Responsive
 	    margin-left: auto;
 	    margin-right: auto;
 	}
-
+	nav.main-nav .main-nav-inr > ul > li.menu-item-has-children > ul.sub-menu{
+		background: transparent;
+	}
+	nav.main-nav ul.sub-menu li a{
+		color: #000;
+	}
 }
 
 
