@@ -415,6 +415,9 @@ Start Responsive
 		height: 100%;
 		position: relative;
 	}
+	body.body-noscroll{
+		overflow: hidden
+	}
 	nav.main-nav ul li{
 		display: block;
 	}
