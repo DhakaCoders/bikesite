@@ -22,14 +22,7 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-        add_image_size( 'aboutgrid', 636, 716, true );
-        add_image_size( 'quotegrid', 508, 720, true );
-        add_image_size( 'gallery', 298, 424, true );
-        add_image_size( 'winesintrogrid', 586, 600, true );
-        add_image_size( 'oliveintrogird', 596, 466, true );
-        add_image_size( 'hmgrid1', 620, 448, true );
-        add_image_size( 'hmgrid2', 560, 448, true );
-        
+        //add_image_size( 'aboutgrid', 636, 716, true );
 
 		
 		// add size to media uploader
@@ -66,6 +59,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/google.maps.php' );
     include_once( THEME_DIR . '/enq-scripts/animate.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
+    include_once( THEME_DIR . '/enq-scripts/jqueryui.php' );
     include_once( THEME_DIR . '/enq-scripts/app.php' );
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 }
