@@ -1,3 +1,7 @@
+Post type: Bike
+Tax: Status, Type, Brand
+----------------------------
+
 Engine
 -Fuel: TypePetrol
 -Transmission: TypeChain Drive
