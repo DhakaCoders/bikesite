@@ -1,0 +1,27 @@
+Post type: Bike
+Tax: Status, Type, Brand
+----------------------------
+
+Engine
+-Fuel: TypePetrol
+-Transmission: TypeChain Drive
+-Fuel Delivery: SystemFuel Injection
+-Reserve Fuel Capacity: 2.5 litres
+
+Body
+
+-Chassis Type: Single Downtube,Using Engine As Stressed Member
+
+Electricals
+GPS & Navigation: No
+Braking System: Single Channel ABS
+Speedometer: Analogue
+Low Fuel Indicator: Yes
+Low Oil Indicator: No
+Low Battery Indicator: Yes
+Shift Light: No
+Clock: No
+Headlight Bulb Type: 12V, HSI-35/35 W
+Brake/Tail Light: 12V, 21W/5W
+Turn Signal: 12V, 10W X 4 Nos.
+Pass Light: Yes
