@@ -104,6 +104,8 @@
       </li>
       <?php endwhile; ?><!-- end of the loop -->
     </ul>
+    <?php else: ?>
+      <div class="noresults">No Results</div>
     <?php wp_reset_postdata(); endif; ?>
   </div>
 </div>
