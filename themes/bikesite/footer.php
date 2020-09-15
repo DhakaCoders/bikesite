@@ -1,47 +1,60 @@
-<footer class="footer-wrap" style="background: url(assets/images/ftr-bg-img.jpg);">
+<?php 
+  $ftabo = get_field('ftabout', 'options');
+
+  $spacialArry = array(".", "/", "+", " ");$replaceArray = '';
+  $e_mailadres = get_field('email', 'options');
+
+  $copyright_text = get_field('copyrighttext', 'options');
+  $smedias = get_field('socialmedia', 'options');
+?>
+<footer class="footer-wrap" style="background: url(<?php echo THEME_URI; ?>/assets/images/ftr-bg-img.jpg);">
   <div class="ftr-inner">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-4">
             <div class="ftr-col">
               <div class="ftr-aboutus-col">
-                <h6>About Us</h6>
-                <p><strong>BikerTrust.com</strong> is the first and largest website about motorcycle in Bangladesh. We have started our journey since 25th January 2012. We have experienced and hard working team and our prime goal is to provide motorcycle related necessary information to the visitors in easy way.</p>
-                <div class="footer-mail">
-                   <i class="far fa-envelope"></i>
-                    <a href="mailto:info@bikertrust.net">info@bikertrust.com</a>
-                </div>
+                <?php if($ftabo): ?>
+                <?php 
+                  if( !empty($ftabo['title']) ) printf('<h6>%s</h6>', $ftabo['title']);
+                  if( !empty($ftabo['description']) ) echo wpautop($ftabo['description']);
+                ?>
+                <?php endif; ?>
+                <?php if( !empty( $e_mailadres ) ) printf('<div class="footer-mail"><i class="far fa-envelope"></i><a href="mailto:%s">%s</a></div>', $e_mailadres, $e_mailadres);  ?>
               </div>
             </div>
         </div>
         <div class="col-sm-6 col-md-5">
           <div class="ftr-col ftr-mid-col">
-            <h6>Quick Links</h6>
-            <ul class="clearfix ulc">
-              <li><a href="#">Showroom List</a></li>
-              <li><a href="#">Latest Price</a></li>
-              <li><a href="#">Offer/Discount</a></li>
-              <li><a href="#">Dealers</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Showroom List</a></li>
-              <li><a href="#">Latest Price</a></li>
-              <li><a href="#">Offer/Discount</a></li>
-              <li><a href="#">Dealers</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-            </ul>
+            <h6><?php _e('Quick Links', THEME_NAME); ?></h6>
+            <?php 
+              $fmenuOptions = array( 
+                  'theme_location' => 'cbv_ft_menu', 
+                  'menu_class' => 'clearfix ulc',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $fmenuOptions ); 
+            ?>
           </div>
         </div>
         <div class="col-sm-12 col-md-3">
           <div class="ftr-col ftr-rgt-col">
-            <h6>Follow Us</h6>
+            <h6><?php _e('Follow Us', THEME_NAME); ?></h6>
             <div class="ftr-social">
+              <?php if(!empty($smedias)):  ?>
               <ul class="clearfix ulc">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <?php 
+                foreach($smedias as $smedia): 
+              ?>
+                <li><a target="_blank" href="<?php echo $smedia['url']; ?>">
+                  <?php echo $smedia['icon']; ?>
+                </a></li>
+              <?php 
+                endforeach; 
+              ?>
               </ul>
+              <?php endif; ?>
             </div>
             <div class="ftr-subscribe">
               <form>
@@ -57,7 +70,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <p>Copyright 2019 - bikertrust - All Rights Reserved</p>
+            <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?> 
           </div>
           <div class="col-sm-6">
             <div class="developedby">
@@ -69,7 +82,7 @@
       </div>
     </div>
     <div class="toTopBtn">
-      <img src="assets/images/toTopBtnIcon.png">
+      <img src="<?php echo THEME_URI; ?>/assets/images/toTopBtnIcon.png">
     </div>
   </div>
 </footer>

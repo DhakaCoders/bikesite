@@ -39,8 +39,7 @@ if( !function_exists('cbv_theme_setup') ){
 
 		register_nav_menus( array(
             'cbv_main_menu' => __( 'Main Menu', THEME_NAME ),
-            'cbv_ft_menu' => __( 'Footer Menu', THEME_NAME ),
-            'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME )
+            'cbv_ft_menu' => __( 'Footer Menu', THEME_NAME )
 		) );
 
 	}
@@ -51,7 +50,7 @@ add_action( 'after_setup_theme', 'cbv_theme_setup' );
 Enqueue Scripts->>
 */
 function cbv_theme_scripts(){
-    include_once( THEME_DIR . '/enq-scripts/popper.php' );
+    //include_once( THEME_DIR . '/enq-scripts/popper.php' );
     include_once( THEME_DIR . '/enq-scripts/bootstrap.php' );
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
     include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
@@ -73,6 +72,7 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
+include_once(THEME_DIR .'/inc/ajax.actions.php');
 /**
 ACF Option pages->>
 */
@@ -159,7 +159,7 @@ function get_all_referenties_posts( $query ) {
             $query->set( 'posts_per_page', '6' );
         }
     }
-add_action( 'pre_get_posts', 'get_all_referenties_posts' );
+//add_action( 'pre_get_posts', 'get_all_referenties_posts' );
 
 
 

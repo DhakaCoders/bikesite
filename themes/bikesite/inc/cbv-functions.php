@@ -168,3 +168,38 @@ function redirect_after_add_to_cart( $url ) {
     return esc_url( get_permalink( get_page_by_title( 'cart' ) ) );
 }
 add_filter( 'woocommerce_add_to_cart_redirect', 'redirect_after_add_to_cart', 99 );
+
+
+/**
+ * Add ACF thumbnail columns to Linen Category custom taxonomy
+ */
+function add_thumbnail_columns($columns) {
+    $columns['brand_thumbnail'] = __('Thumbnail');
+    // Enable the single line of code below if you want the Thumbnail at the end.
+    //return $columns;
+
+    // Code below will make the Thumbnail in the front.
+    // Code start
+    $new = array();
+    foreach($columns as $key => $value) {
+        if ($key=='name') // Put the Thumbnail column before the Name column
+            $new['brand_thumbnail'] = 'Thumbnail';
+        $new[$key] = $value;
+    }
+    return $new;
+    // Code end
+}
+add_filter('manage_edit-brand_category_columns', 'add_thumbnail_columns');
+
+/**
+ * Output ACF thumbnail content in Linen Category custom taxonomy columns
+ */
+function thumbnail_columns_content($content, $column_name, $term_id) {
+    if ('brand_thumbnail' == $column_name) {
+        $term = get_term($term_id);
+        $linen_thumbnail_var = get_field('blogo', $term);
+        $content = '<img src="'.$linen_thumbnail_var['url'].'" width="60" />';
+        }
+    return $content;
+}
+add_filter('manage_brand_category_custom_column' , 'thumbnail_columns_content' , 10 , 3);
