@@ -17,13 +17,6 @@ get_header();
             <div class="fl-sec-hdr">
               <h4>Search Results: <?php the_search_query(); ?></h4>
             </div>
-            <?php 
-            $blargs = array(
-                'posts_per_page' => 6,
-                'post_type' => 'bike'
-            );
-            $blquery = new WP_Query($blargs); 
-            ?>
             <div class="searchbt-grd-controller">
               <?php if(have_posts()): ?>
               <ul class="clearfix ulc">
@@ -38,6 +31,7 @@ get_header();
                 <li>
                   <div class="bt-grd-item">
                     <div class="product-img">
+                      <?php if ( get_post_type( get_the_ID() ) == 'bike' ){ ?>
                       <a href="<?php the_permalink(); ?>">
                         <?php
                           if( !empty($gridimgID) )
@@ -50,19 +44,26 @@ get_header();
                         <ul class="clearfix ulc">
                             <?php if( !empty($fullspe['year']) ) printf('<li>%s</li>', $fullspe['year']); ?>
                             <li>MANUAL</li>
-                            <li>PETROL</li>
+                            <?php if( !empty($engtrans['fuel_type']) ) printf('<li>%s</li>', $engtrans['fuel_type']); ?>
                             <?php if( !empty($engtrans['displacement_cc']) ) printf('<li>%s CC</li>', $engtrans['displacement_cc']); ?>
                         </ul>
                       </div>
                       <div class="product-content-wrapper">
                           <div class="product-title-spreed">
                               <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                              <span>6600 RPM</span>
+                              <?php if( !empty($engtrans['rpm']) ) printf('<span>%s RPM</span>', $engtrans['rpm']); ?>
                           </div>
                           <div class="product-price">
                             <?php if( !empty($price['price']) ) printf('<span>BDT %s</span>', $price['price']); ?>
                           </div>
                       </div>
+                      <?php }else{ ?>
+                        <div class="product-content-wrapper">
+                          <div class="product-title-spreed">
+                              <?php the_title(); ?>
+                          </div>
+                        </div>
+                      <?php } ?>
                   </div>
                   </div>
                 </li>
@@ -70,7 +71,7 @@ get_header();
               </ul>
               <?php else: ?>
                 <div class="noresults">No Results</div>
-              <?php wp_reset_postdata(); endif; ?>
+              <?php endif; ?>
             </div>
           </div>
         </div>
