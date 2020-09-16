@@ -43,7 +43,7 @@
               <ul class="clearfix ulc">
                   <?php if( !empty($fullspe['year']) ) printf('<li>%s</li>', $fullspe['year']); ?>
                   <li>MANUAL</li>
-                  <li>PETROL</li>
+                  <?php if( !empty($engtrans['fuel_type']) ) printf('<li>%s</li>', $engtrans['fuel_type']); ?>
                   <?php if( !empty($engtrans['displacement_cc']) ) printf('<li>%s CC</li>', $engtrans['displacement_cc']); ?>
               </ul>
             </div>
@@ -108,7 +108,7 @@
               <ul class="clearfix ulc">
                   <?php if( !empty($fullspe['year']) ) printf('<li>%s</li>', $fullspe['year']); ?>
                   <li>MANUAL</li>
-                  <li>PETROL</li>
+                  <?php if( !empty($engtrans['fuel_type']) ) printf('<li>%s</li>', $engtrans['fuel_type']); ?>
                   <?php if( !empty($engtrans['displacement_cc']) ) printf('<li>%s CC</li>', $engtrans['displacement_cc']); ?>
               </ul>
             </div>

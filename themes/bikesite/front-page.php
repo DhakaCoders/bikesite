@@ -117,12 +117,16 @@ endif;
               <?php if ( ! empty( $brands ) && ! is_wp_error( $brands ) ){  ?>
               <ul class="clearfix ulc">
                 <?php 
+                  $toalTerm = count($brands);
+                  $totalActiveTerm = 0;
+                  $i = 1;
                   foreach ( $brands as $brand ) { 
                   $is_popular = get_field('is_that_popular', $brand);
                   if($is_popular):
+                    $totalActiveTerm = $i;
                 ?>
                 <li>
-                  <a href="<?php echo $brand->slug; ?>">
+                  <a href="<?php echo get_term_link($brand); ?>">
                     <figure>
                       <?php 
                         $blogoID = get_field('blogo', $brand);
@@ -132,12 +136,14 @@ endif;
                     <strong><?php echo $brand->name; ?></strong>
                   </a>
                 </li>
-                <?php endif; } ?>
+                <?php $i++; endif; } ?>
+                <?php if( $toalTerm > $totalActiveTerm ): ?>
                 <li class="brands-more-items">
-                  <a href="#">
+                  <a href="<?php echo home_url('brand'); ?>">
                     <strong>More item</strong>
                   </a>
                 </li>
+                <?php endif; ?>
               </ul>
               <?php } ?>
             </div>
