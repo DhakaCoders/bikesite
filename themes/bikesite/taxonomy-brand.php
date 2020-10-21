@@ -50,7 +50,7 @@ endif;
         </div>
         <div class="col-sm-12 col-md-9">
           <div class="main-con-section">
-            <div class="fl-sec-hdr">
+            <div class="pt-15 fl-sec-hdr">
               <h4><?php echo $currentcat->name; ?></h4>
             </div>
             <div class="bt-grd-controller">
