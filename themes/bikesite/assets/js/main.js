@@ -267,10 +267,7 @@ $(window).resize(function(){
 }).resize();
 
     new WOW().init();*/
-var domaIn = '';
-if( $("#bikeFilter").length ){
-  domaIn = $("#bikeFilter").data('domain');
-}
+
 
 $("#bikeFilter").on('submit', function(e){
   e.preventDefault();
@@ -282,23 +279,23 @@ $("#bikeFilter").on('submit', function(e){
   type = $("#btype").val();
   amount = $("#amount").val();
   if( (brand != '') && ( type != '') && (capacity != '') && (amount != '')){
-    document.location.href = domaIn+'?bbrand='+brand+'&btype='+type+'&bcapacity='+capacity+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?bbrand='+brand+'&btype='+type+'&bcapacity='+capacity+'&price-range='+amount;
   }else if( (brand != '') && (capacity != '') && (capacity != '') && (amount != '') ){
-    document.location.href = domaIn+'?bbrand='+brand+'&bcapacity='+capacity+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?bbrand='+brand+'&bcapacity='+capacity+'&price-range='+amount;
   }else if( (brand != '') && (capacity != '') && (amount != '')){
-    document.location.href = domaIn+'?bbrand='+brand+'&bcapacity='+capacity+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?bbrand='+brand+'&bcapacity='+capacity+'&price-range='+amount;
   }else if( (brand != '') && (type != '') && (amount != '')){
-    document.location.href = domaIn+'?bbrand='+brand+'&btype='+type+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?bbrand='+brand+'&btype='+type+'&price-range='+amount;
   }else if( (type != '') && (capacity != '') && (amount != '') ){
-    document.location.href = domaIn+'?bcapacity='+capacity+'&btype='+type+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?bcapacity='+capacity+'&btype='+type+'&price-range='+amount;
   }else if( (brand != '') && (amount != '') ){
-    document.location.href = domaIn+'?bbrand='+brand+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?bbrand='+brand+'&price-range='+amount;
   }else if( (capacity != '') && (amount != '') ){
-    document.location.href = domaIn+'?bcapacity='+capacity+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?bcapacity='+capacity+'&price-range='+amount;
   }else if( (type != '') && (amount != '') ){
-    document.location.href = domaIn+'?btype='+type+'&price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?btype='+type+'&price-range='+amount;
   }else if( (amount != '') ){
-    document.location.href = domaIn+'?price-range='+amount;
+    document.location.href = 'http://localhost/2020/08/bikesite/?price-range='+amount;
   }else{
 
   }
