@@ -20,7 +20,7 @@
     'parent' => 0
   ) );
   ?>
-<form class="clearfix" id="bikeFilter">
+<form class="clearfix" id="bikeFilter" data-domain="<?php echo esc_url(home_url('/')); ?>">
   <div class="clearfix bt-search-selects">
     <div class="bt-filter-search-item bt-filter-search-item-brands">
       <label>Brand -</label>
