@@ -24,7 +24,7 @@
 
   if ( isset($_GET['price-range']) && !empty($_GET['price-range'])){
   	$exprice = explode('-', str_replace('BDT', '', $_GET['price-range']));
-	$meta[] = array(
+	  $meta[] = array(
          'key'     => 'priceav_price',
          'value'   => array( $exprice[0], $exprice[1]),
          'compare' => 'BETWEEN',
