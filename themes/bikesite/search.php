@@ -1,6 +1,21 @@
 <?php 
 get_header(); 
 ?>
+<section class="filter-banner samlle-banner inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/h4-img-42.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="samlle-banner-des-cntlr">
+          <div class="samlle-banner-des page-banner-con">
+            <div>
+              <h1></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="main-content home-main-content">
 <div class="hasImg">
   <img src="<?php echo THEME_URI; ?>/assets/images/bgimg1.jpg">
