@@ -8,7 +8,7 @@ get_header();
         <div class="samlle-banner-des-cntlr">
           <div class="samlle-banner-des page-banner-con">
             <div>
-              <h1></h1>
+              <h4><?php the_search_query(); ?></h4>
             </div>
           </div>
         </div>
