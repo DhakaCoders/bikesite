@@ -12,6 +12,10 @@ Text Domain: bike
 */
 
 @import url('assets/css/main.css');
-
-
+.wcMessagesContainerTab.wcChannelTab{
+	display: none;
+}
+.wcMessagesContainerTab .wcMessagesContainerTabCloseLink{
+	display: none!important;
+}
 

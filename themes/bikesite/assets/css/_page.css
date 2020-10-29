@@ -179,7 +179,12 @@
 	padding-left: 0;
 }
 
-
+.bt-grd-controller{
+	padding-left: 10px;
+}
+.noresults{
+	color: #FF0000;
+}
 /*
 -------------------
 Start Responsive
