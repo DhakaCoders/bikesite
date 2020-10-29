@@ -147,6 +147,20 @@ img{
 	z-index: 10;
 }
 
+.overlay-link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.inline-bg{
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+}
+
 
 /**
 Selects

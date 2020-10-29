@@ -7,9 +7,22 @@ if ( (isset($_GET['bbrand']) && !empty($_GET['bbrand'])) || ( isset($_GET['bcapa
 
 if($hmfilter){
 ?>
-<section class="filter-banner">
+<section class="filter-banner samlle-banner inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/h4-img-42.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="samlle-banner-des-cntlr">
+          <div class="samlle-banner-des page-banner-con">
+            <div>
+              <h1></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</section>  
 <?php }else{ ?>
 <?php 
 $bannersec = array(); $pagebanner = '';
