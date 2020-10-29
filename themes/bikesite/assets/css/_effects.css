@@ -14,13 +14,16 @@ a,input,img,textarea,button,
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 }
-.popular-brands-logos ul li:hover a figure img{
+.popular-brands-logos ul li:hover a figure img,
+.bt-grd-item:hover .product-img > a img{
 	transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	-o-transform: scale(1.05);
 }
-
+.bt-grd-item{
+	overflow: hidden;
+}
 /**
 All Hovers
 */
