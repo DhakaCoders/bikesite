@@ -211,7 +211,10 @@
     background: rgba(0,0,0,.5);
 }
 .main-content{
-	min-height: 550px;
+	min-height: 800px;
+}
+.noresults{
+	padding-left: 10px;
 }
 /*
 -------------------
