@@ -7,7 +7,9 @@ if ( (isset($_GET['bbrand']) && !empty($_GET['bbrand'])) || ( isset($_GET['bcapa
 
 if($hmfilter){
 ?>
-<section class="hm-bike-filter">
+<section class="filter-banner">
+
+</section>  
 <?php }else{ ?>
 <?php 
 $bannersec = array(); $pagebanner = '';
@@ -60,8 +62,6 @@ endif;
     </div>
   </div>
 </section>
-
-<section>  
 <?php } ?>
   <div class="container">
     <div class="row">
