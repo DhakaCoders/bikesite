@@ -6,6 +6,25 @@ if($('#preloader').length){
   $('#preloader').delay(550).fadeOut('slow'); // will fade out the white DIV that covers the website. 
   $('body').delay(550).css({'overflow':'visible'});
 }
+//matchHeightCol
+if($('.mHc').length){
+  $('.mHc').matchHeight();
+};
+if($('.mHc1').length){
+  $('.mHc1').matchHeight();
+};
+if($('.mHc2').length){
+  $('.mHc2').matchHeight();
+};
+if($('.mHc3').length){
+  $('.mHc3').matchHeight();
+};
+if($('.mHc4').length){
+  $('.mHc4').matchHeight();
+};
+if($('.mHc5').length){
+  $('.mHc5').matchHeight();
+};
 
 
 
@@ -321,6 +340,27 @@ $(document).on('mouseover mouseout', 'body', function(){
   counter++;
   }
 });
+
+
+
+$('div.fl-tabs button').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('div.fl-tabs button').removeClass('current');
+    $('.fl-tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+});
+
+
+$('.mkdf-btn').on('click', function (){
+  $('.mkdf-btn').not(this).parent().removeClass('btn-popup-show');
+  $(this).parent().toggleClass('btn-popup-show');
+});
+
+
+
 
 })(jQuery);
 
