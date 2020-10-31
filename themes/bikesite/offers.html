@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sitemap</title>
+	<title>Offers</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
@@ -14,14 +13,18 @@
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jqueryui.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->  
+  <![endif]-->	
 
 </head>
 <body>
@@ -127,22 +130,109 @@
 </header>
 
 
-<section class="main-banner compare-page-bnr page-banner" style="background: url(assets/images/page-banner-compare.jpg);">
+<section class="page-slider-section">
+    <div class="offers-page-slider-cntlr clearfix">
+      <div class="offersPageSlider">
+        <div class="offersPageSlideItem">
+          <img src="assets/images/offers-img-1.jpg">
+        </div>
+        <div class="offersPageSlideItem">
+          <img src="assets/images/offers-img-1.jpg">
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="offers-page-filters">  
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="main-bnr-slider">
-          <div class="main-bnr-slide-item clearfix page-banner-con">
-            <div class="main-bnr-slide-item-des">
-              <div>
-                <h1>Sitemap</h1>
-              </div>
+        <div class="search-filter-section">
+            <div class="bt-search-filter-sec-hdr">
+              <h4><span>search bike offers</span></h4>
             </div>
-<!--             <div class="main-bnr-slide-item-img">
-              <img src="assets/images/layer_img_1.png">
-            </div> -->
+            <div class="bt-filter-search-controller">
+              <form class="clearfix">
+                <div class="clearfix bt-search-selects">
+                  <div class="bt-filter-search-item bt-filter-search-item-brands">
+                    <label>Brand -</label>
+                    <div class="bt-selctpicker-ctlr">
+                      <select class="selectpicker" data-size="7" data-live-search="true">
+                        <option selected="selected">Select Brand</option>
+                        <option>Hero</option>
+                        <option>Honda</option>
+                        <option>TVS</option>
+                        <option>Yamaha</option>
+                        <option>Suzuki</option>
+                        <option>Lifan</option>
+                        <option>Kawasaki</option>
+                        <option>Runner</option>
+                        <option>Keeway</option>
+                        <option>Roadmaster</option>
+                        <option>Benelli</option>
+                        <option>Haojue</option>
+                        <option>H Power</option>
+                        <option>Race</option>
+                        <option>Vespa</option>
+                        <option>Aprilia</option>
+                        <option>KTM</option>
+                        <option>GPX</option>
+                        <option>Taro</option>
+                        <option>Zongshen</option>
+                        <option>Atlas Zongshen</option>
+                        <option>Mahindara</option>
+                        <option>Avatar</option>
+                        <option>Beetle Bolt</option>
+                        <option>Dayun</option>
+                        <option>Hundai</option>
+                        <option>Kiden</option>
+                        <option>Megelli</option>
+                        <option>Meiduo</option>
+                        <option>Motrac</option>
+                        <option>Pegasus</option>
+                        <option>UM</option>
+                        <option>Victor</option>
+                        <option>Znen</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bt-filter-search-item bt-filter-search-item-capacity">
+                    <label>Model -</label>
+                    <div class="bt-selctpicker-ctlr">
+                      <select class="selectpicker" data-size="7" data-live-search="true">
+                        <option selected="selected" max=10>GSX 250 R</option>
+                        <option value="Dhaka_Branch">MT 15</option>
+                        <option value="Mymensing_Branch">GSX 250 R</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="bt-filter-search-item bt-filter-search-item-capacity">
+                    <label>CITIES -</label>
+                    <div class="bt-selctpicker-ctlr">
+                      <select class="selectpicker" data-size="7" data-live-search="true">
+                        <option selected="selected" max=10>Select Cities</option>
+                        <option value="Dhaka_Branch">Dhaka Branch</option>
+                        <option value="Mymensing_Branch">Mymensing  Branch</option>
+                        <option value="B_Baria_Branch">B. Baria Branch</option>
+                        <option value="Sylhet_Branch">Sylhet Branch</option>
+                        <option value="Chittagong_Branch">Chittagong  Branch</option>
+                        <option value="155cc">Noakhali Branch</option>
+                        <option value="Cox’s_Bazar_Branch">Cox’s Bazar Branch</option>
+                        <option value="Rajshahi_Branch">Rajshahi Branch</option>
+                        <option value="Khulna_Branch">Khulna Branch</option>
+                        <option value="Jessore_Branch">Jessore  Branch</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="bt-search-selects-submit-btn">
+                  <input type="submit" name="" value="Search">
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
@@ -150,39 +240,59 @@
 
 
 
-
-<section class="main-content">
+<section class="offers-page-content-cntlr">
   <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="sitemap">
-            <h2>Sitemap</h2>
-            <nav>
-              <ul>
-                <li><a href="front-page.html" target="_blank">Home</a></li>
-                <li><a href="single.html" target="_blank">Single</a></li>
-                <li><a href="compare.html" target="_blank">Compare</a></li>
-                <li><a href="compare-single.html" target="_blank">Compare Single</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-                <li><a href="page.html" target="_blank">Page</a></li>
-                <li><a href="showrooms.html" target="_blank">Showrooms</a></li>
-                <li><a href="showrooms-single.html" target="_blank">Showrooms Single</a></li>
-                <li><a href="offers.html" target="_blank">Offers</a></li>
-                <li><a href="404.html" target="_blank">404</a></li>
-              </ul>
-            </nav>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="offers-page-content">
+          <div class="fl-sec-hdr">
+            <h4>Bike news</h4>
           </div>
+          <ul class="ulc">
+            <li>
+              <div class="offer-item-row clearfix">
+                <div class="offer-item-row-lft">
+                  <img src="assets/images/offers-img-1.jpg">
+                </div>
+                <div class="offer-item-row-rgt">
+                  <h4>300 Taka cashback for bKash Payment on Runner Bike</h4>
+                  <strong>2020-10-25</strong>
+                  <p>Bkash has come up with an easy way to pay the bill for the bike purchased in installments from Runner Motorcycle. There is also a cashback facility up to 300 taka. If you buy a vehicle from Runner Motorcycle in installments, paying the monthly installment will be simple with bKash now and there will be cashback, which is extra. If you buy any of Runner's motorcycles in installments, you can get instant cashback up to TK 300 if you pay the...</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="offer-item-row clearfix">
+                <div class="offer-item-row-lft">
+                  <img src="assets/images/offers-img-1.jpg">
+                </div>
+                <div class="offer-item-row-rgt">
+                  <h4>300 Taka cashback for bKash Payment on Runner Bike</h4>
+                  <strong>2020-10-25</strong>
+                  <p>Bkash has come up with an easy way to pay the bill for the bike purchased in installments from Runner Motorcycle. There is also a cashback facility up to 300 taka. If you buy a vehicle from Runner Motorcycle in installments, paying the monthly installment will be simple with bKash now and there will be cashback, which is extra. If you buy any of Runner's motorcycles in installments, you can get instant cashback up to TK 300 if you pay the...</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="offer-item-row clearfix">
+                <div class="offer-item-row-lft">
+                  <img src="assets/images/offers-img-1.jpg">
+                </div>
+                <div class="offer-item-row-rgt">
+                  <h4>300 Taka cashback for bKash Payment on Runner Bike</h4>
+                  <strong>2020-10-25</strong>
+                  <p>Bkash has come up with an easy way to pay the bill for the bike purchased in installments from Runner Motorcycle. There is also a cashback facility up to 300 taka. If you buy a vehicle from Runner Motorcycle in installments, paying the monthly installment will be simple with bKash now and there will be cashback, which is extra. If you buy any of Runner's motorcycles in installments, you can get instant cashback up to TK 300 if you pay the...</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-  </div>    
+    </div>
+  </div>
 </section>
 
-
-
-<!-- -- Gap markup--- -->
-<div class="gap" data-value='100' data-md='50' data-xs='40' data-sm='30' data-xxs='20'></div>
-<div class="margin" data-value='100'></div>
-<div class="padding" data-value='100'></div>
 
 
 

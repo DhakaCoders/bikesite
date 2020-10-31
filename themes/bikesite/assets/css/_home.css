@@ -198,9 +198,11 @@ ul.slick-dots li.slick-active{
     text-align: center;
 }
 .slick-next:hover,
-.slick-prev:hover{
+.slick-prev:hover,
+.slick-next:focus,
+.slick-prev:focus{
 	opacity: 1!important;
-	background: #242424;
+	background: #242424!important;
 }
 .slick-prev:after{
 	content: "\f104";

@@ -264,6 +264,15 @@ if( $('.responsive-slider').length ){
       ]
     });
 }
+if( $('.offersPageSlider').length ){
+    $('.offersPageSlider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
 
 if( $('#bt-vdo').length ){
 document.getElementById('bt-vdo').play();

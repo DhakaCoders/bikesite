@@ -243,6 +243,16 @@ form .dropdown-menu li a{
 
 
 
+/*slider break fix*/
+.offersPageSlider .offersPageSlideItem{
+    display: none;
+}
+.offersPageSlider .offersPageSlideItem:first-child{
+    display: block;
+}
+.slick-initialized.offersPageSlider .offersPageSlideItem{
+    display: block;
+}
 /*
 -------
 Page looader 
