@@ -1,14 +1,22 @@
 .showrooms-main-content{
-	padding: 50px 0 0;
+	padding: 70px 0 0;
 }
-
+.showrooms-main-content .fl-sec-hdr{
+	padding-bottom: 30px;
+}
 
 .fl-tabs{
 	padding-bottom: 50px;
 	padding-top: 20px;
 	padding-left: 10px;
 }
-
+.showrooms-tabs-cntrl .fl-tabs{
+	text-align: center;
+}
+.tab-hdr-title{
+	text-align: center;
+	
+}
 .fl-tab-content{
 	display: none;
 }
@@ -274,7 +282,7 @@
 }
 
 .showrooms-filter .search-filter-section{
-	margin-top: -105px;
+	margin-top: -118px;
 }
 
 .showrooms-filter .bt-filter-search-item{

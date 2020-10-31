@@ -351,6 +351,7 @@ $('div.fl-tabs button').click(function(){
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
+    $('.mHc').matchHeight();
 });
 
 
@@ -358,6 +359,7 @@ $('.mkdf-btn').on('click', function (){
   $('.mkdf-btn').not(this).parent().removeClass('btn-popup-show');
   $(this).parent().toggleClass('btn-popup-show');
 });
+
 
 
 
