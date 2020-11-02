@@ -1,3 +1,19 @@
+.offers-page-content-cntlr{
+	padding-bottom: 70px;
+}
+.offersPageSlideItem{
+	display: flex;
+	align-items: center;
+	min-height: 400px; 
+}
+.offersPageSlideItem a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.offers-page{
+	position: relative;
+	min-height: 1000px;
+}
 .offersPageSlider{
 	background: rgba(0,0,0,.5);
 	text-align: center;
@@ -6,6 +22,7 @@
 .offersPageSlideItem img{
 	display: inline-block;
 	vertical-align: baseline;
+	max-height: 400px;
 }
 
 
@@ -27,21 +44,31 @@
 	align-items: center;
 	border: 1px solid rgba(36,39,44,.15);
 	margin-bottom: 30px;
+	padding: 20px;
+	background: rgba(255,255,255,.7);
 }
 .offers-page-content .fl-sec-hdr{
 	padding-left: 0;
 }
 
 .offer-item-row-lft{
-	width: 30%;
+	width: 18%;
 	padding-right: 30px;
 }
 .offer-item-row-rgt{
 	width: 70%;
 }
 
+
 .offer-item-row-rgt strong{
 	color: #f4b406;
 	display: block;
 	margin-bottom: 20px;
+}
+.offer-item-row-rgt p{
+	margin-bottom: 20px;
+}
+
+.read-more-btn .mkdf-btn.mkdf-btn-predefined{
+	padding: 6px 15px;
 }

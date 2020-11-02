@@ -1,13 +1,27 @@
 .showrooms-main-content{
 	padding: 70px 0 0;
 }
-.showrooms-main-content .fl-sec-hdr{
-	padding-bottom: 30px;
+.dealers-row-hdr{
+    display: flex;
+    align-items: center;
 }
-
+.dealers-row-hdr .tab-link:last-child{
+    margin-right: 0;
+}
+.dealers-row-hdr{
+    padding-bottom: 30px;
+}
+.dealers-row-hdr .fl-tabs{
+    margin-left: auto;
+    margin-bottom: 0;
+}
+.showrooms-main-content .fl-sec-hdr{
+    padding-left: 0;
+}
+.dealers-row-hdr .fl-sec-hdr h4{
+    margin-bottom: 0;
+}
 .fl-tabs{
-	padding-bottom: 50px;
-	padding-top: 20px;
 	padding-left: 10px;
 }
 .showrooms-tabs-cntrl .fl-tabs{
@@ -43,7 +57,7 @@
 .border-grd-items ul{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -5px;
+	margin: 0 -15px;
 }
 .border-grd-items ul li{
 	width: 25%;
@@ -240,6 +254,7 @@
 	opacity: 1;
 	z-index: 15;
 	margin-bottom: 10px;
+    width: 180px;
 }
 .btn-popup a > i {
     color: #fff;
@@ -275,6 +290,24 @@
     right: 8px;
     top: 5px;
     font-size: 12px;
+}
+.load-more-btn{
+    display: flex;
+    padding-top: 50px;
+}
+.load-more-btn .mkdf-btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+.load-more-btn .mkdf-btn.mkdf-btn-predefined{
+    background: transparent;
+    font-size: 15px;
+
+}
+.load-more-btn .ion-ios-play:before,
+.load-more-btn .mkdf-btn.mkdf-btn-predefined{
+   color: #000;
+   border-color: #000;
 }
 
 .dealers-row{
