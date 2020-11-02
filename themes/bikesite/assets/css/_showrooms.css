@@ -1,5 +1,5 @@
 .showrooms-main-content{
-	padding: 70px 0 0;
+	padding: 70px 0 70px;
 }
 .dealers-row-hdr{
     display: flex;
@@ -293,7 +293,7 @@
 }
 .load-more-btn{
     display: flex;
-    padding-top: 50px;
+    padding-top: 0;
 }
 .load-more-btn .mkdf-btn{
     margin-left: auto;
@@ -320,4 +320,86 @@
 
 .showrooms-filter .bt-filter-search-item{
 	width: 50%;
+}
+
+
+
+
+@media(max-width: 1199px){
+    .border-grd-items ul{
+        margin: 0 -10px;
+    }
+    .border-grd-items ul li{
+        width: 33.3333%;
+        padding: 0 10px 20px;
+    }
+    .showrooms-single-page-grds{
+        overflow: hidden;
+    }
+
+}
+
+
+@media(max-width: 991px){
+    .border-grd-items ul{
+        margin: 0 -20px;
+    }
+    .border-grd-items ul li{
+        width: 50%;
+        padding: 0 20px 40px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .border-grd-items ul{
+        margin: 0 -10px;
+    }
+    .border-grd-items ul li{
+        padding: 0 10px 20px;
+    }
+}
+
+
+
+@media(max-width: 639px){
+    .border-grd-items ul{
+        margin: 0;
+    }
+    .border-grd-items ul li{
+        padding: 0 0 25px;
+        width: 100%;
+    }
+    .border-grd-item{
+        max-width: 350px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+@media(max-width: 575px){
+    .showrooms-main-content .fl-sec-hdr h4{
+        font-size: 24px;
+    }
+    .dealers-row-hdr{
+        display: block;
+    }
+    .showrooms-tabs-cntrl .fl-tabs{
+        padding-top: 20px;
+    }
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
 }

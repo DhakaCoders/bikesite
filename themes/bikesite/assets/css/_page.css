@@ -216,6 +216,15 @@
 .noresults{
 	padding-left: 10px;
 }
+.offersPageSlideItem div{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+}
+.offersPageSlider .slick-dots{
+	bottom: 25px;
+}
 /*
 -------------------
 Start Responsive
