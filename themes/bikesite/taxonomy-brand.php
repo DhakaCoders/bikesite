@@ -37,7 +37,7 @@ endif;
 
 <section>  
 
-<section class="main-content home-main-content">
+<section class="main-content archive-main-content">
 <div class="hasImg">
   <img src="<?php echo THEME_URI; ?>/assets/images/bgimg1.jpg">
 </div>

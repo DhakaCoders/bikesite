@@ -159,10 +159,11 @@ nav.main-nav .main-nav-inr > ul > li > a:after{
     transition: all 0.15s ease-out 0s;
     width: 100%;
 }
-nav.main-nav .main-nav-inr > ul > li > a:hover:after{
+nav.main-nav .main-nav-inr > ul > li > a:hover:after,
+nav.main-nav .main-nav-inr > ul > li.current-menu-item > a:after{
     transform: scale(1, 1);
 }
-nav.main-nav .main-nav-inr > ul > li.current-menu-item > a:after{
+/*nav.main-nav .main-nav-inr > ul > li.current-menu-item > a:after{
 	content: "";
 	width: 8px;
 	height: 8px;
@@ -174,8 +175,7 @@ nav.main-nav .main-nav-inr > ul > li.current-menu-item > a:after{
 	-webkit-transform: translateX(-50%);
 	bottom: 0;
 	top: auto;
-
-}
+}*/
 
 
 nav.main-nav .main-nav-inr > ul > li.menu-item-has-children:hover > a:after{

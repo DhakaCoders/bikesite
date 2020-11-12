@@ -1,0 +1,158 @@
+.offers-page-content-cntlr{
+	padding-bottom: 70px;
+}
+.offersPageSlideItem{
+	display: flex;
+	align-items: center;
+	min-height: 400px; 
+}
+.offersPageSlideItem a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.offers-page{
+	position: relative;
+	min-height: 1000px;
+}
+.offersPageSlider{
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	margin: 0!important;
+}
+.offersPageSlideItem img{
+	display: inline-block;
+	vertical-align: baseline;
+	max-height: 400px;
+}
+
+
+.offers-page-filters .search-filter-section{
+	margin-top: 0;
+	margin-top: 25px;
+}
+
+.offers-page-filters .bt-filter-search-item{
+	width: 33.3333%;
+}
+
+.offers-page-filters .bt-search-filter-sec-hdr h4{
+	color: #fff;
+}
+
+.offer-item-row{
+	display: flex;
+	align-items: center;
+	border: 1px solid rgba(36,39,44,.15);
+	margin-bottom: 30px;
+	padding: 20px;
+	background: rgba(255,255,255,.7);
+}
+.offers-page-content .fl-sec-hdr{
+	padding-left: 0;
+}
+
+.offer-item-row-lft{
+	width: 18%;
+	padding-right: 30px;
+}
+.offer-item-row-rgt{
+	width: 70%;
+}
+
+
+.offer-item-row-rgt strong{
+	color: #f4b406;
+	display: block;
+	margin-bottom: 20px;
+}
+.offer-item-row-rgt p{
+	margin-bottom: 20px;
+}
+
+.read-more-btn .mkdf-btn.mkdf-btn-predefined{
+	padding: 6px 15px;
+}
+
+.offers-single-page-con{
+	padding: 50px 0 70px;
+}
+
+.ospc-cntlr h2{
+	margin-bottom: 30px;
+	text-align: center;
+}
+.ospc-cntlr img{
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	margin-bottom: 30px;
+}
+
+
+
+
+@media(max-width: 1199px){
+	.offer-item-row-lft {
+	    width: 25%;	
+	}
+	.offer-item-row-rgt h4{
+		font-size: 23px;
+	}
+
+}
+
+
+@media(max-width: 991px){
+	.offer-item-row-rgt h4{
+		font-size: 22px;
+	}
+}
+
+
+@media(max-width: 767px){
+	.offer-item-row{
+		display: block;
+	}
+	.offer-item-row-lft{
+		width: 100%;
+		max-width: 300px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 25px;
+		padding-right: 0;
+	}
+	.offer-item-row-rgt{
+		width: 100%;
+	}
+}
+
+
+
+@media(max-width: 639px){
+	.offer-item-row-rgt h4 {
+	    font-size: 21px;
+	}
+}
+
+
+
+@media(max-width: 575px){
+	.offer-item-row-rgt h4 {
+	    font-size: 20px;
+	}
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
+}
