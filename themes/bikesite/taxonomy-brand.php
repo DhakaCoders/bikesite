@@ -9,8 +9,15 @@ if( $bannertype == 'image' ):
   $pbanner = $bannersec['bannerimage'];
   if( !empty($pbanner) ) $pagebanner = $pbanner;
 endif;
+$name = $currentcat->name;
+$desc = $currentcat->description;
+$image = get_field('featured_image', $currentcat);
+$tbanner = THEME_URI .'/assets/images/h4-img-42.jpg';
+if( $image && !empty( $image ) ){
+  $tbanner = cbv_get_image_src($image);
+}
 ?>
-<section class="main-banner page-banner home-page-bnr" style="background: url(<?php echo $pagebanner; ?>);">
+<section class="main-banner page-banner home-page-bnr bannerv2" style="background: url(<?php echo $tbanner; ?>);">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -18,24 +25,20 @@ endif;
           <div class="main-bnr-slide-item clearfix page-banner-con">
             <div class="main-bnr-slide-item-des">
               <div>
-                <?php if( !empty($bannersec['title']) ) printf('<h5>%s</h5>', $bannersec['title']); ?>
+                <?php //if( !empty($bannersec['title']) ) printf('<h5>%s</h5>', $bannersec['title']); ?>
                 <?php
-                  if( !empty($bannersec['subtitle']) ) printf('<h1>%s</h1>', $bannersec['subtitle']); 
-                  if( !empty($bannersec['description']) ) echo wpautop( $bannersec['description'] ); 
+                  if( !empty($name) ) printf('<h1>%s</h1>', $name); 
+                  if( !empty($desc) ) echo wpautop( $desc ); 
                 ?>
               </div>
             </div>
-<!--             <div class="main-bnr-slide-item-img">
-              <img src="<?php echo THEME_URI; ?>/assets/images/layer_img_1.png">
-            </div> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<section>  
+ 
 
 <section class="main-content archive-main-content">
 <div class="hasImg">

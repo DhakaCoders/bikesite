@@ -18,4 +18,9 @@ Text Domain: bike
 .wcMessagesContainerTab .wcMessagesContainerTabCloseLink{
 	display: none!important;
 }
-
+.bannerv2 .main-bnr-slide-item-des{
+	min-height: 250px;
+}
+.main-content.archive-main-content{
+	overflow: hidden;
+}
