@@ -6,8 +6,13 @@ $bannersec = array();
 $bannersec = get_field('bannersec', get_the_ID());
 $pagebanner = $bannersec['bannerimage'];
 if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/h4-img-42.jpg';
+
+$term_obj_list = get_the_terms( get_the_ID(), 'brand' );
+$brand = $term_obj_list[0]->name;
+$title = get_the_title();
+if( !empty($bannersec['title']) ) $title = $bannersec['title'];
 ?> 
-<section class="main-banner page-banner" style="background: url(<?php echo $pagebanner; ?>);">
+<section class="main-banner page-banner bannerv2" style="background: url(<?php echo $pagebanner; ?>);">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -15,9 +20,9 @@ if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/h4-img-42.jpg';
           <div class="main-bnr-slide-item clearfix">
             <div class="main-bnr-slide-item-des page-banner-con">
               <div>
-                <?php if( !empty($bannersec['title']) ) printf('<h5>%s</h5>', $bannersec['title']); ?>
+                <?php if( !empty($brand) ) printf('<h5>%s</h5>', $brand); ?>
                 <?php
-                  if( !empty($bannersec['subtitle']) ) printf('<h1>%s</h1>', $bannersec['subtitle']); 
+                  if( !empty($title) ) printf('<h1>%s</h1>', $title); 
                   if( !empty($bannersec['description']) ) echo wpautop( $bannersec['description'] ); 
                 ?>
               </div>

@@ -351,8 +351,7 @@ $(document).on('mouseover mouseout', 'body', function(){
 });
 
 
-
-$('div.fl-tabs button').click(function(){
+/*$('div.fl-tabs button').click(function(){
     var tab_id = $(this).attr('data-tab');
 
     $('div.fl-tabs button').removeClass('current');
@@ -361,7 +360,7 @@ $('div.fl-tabs button').click(function(){
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
     $('.mHc').matchHeight();
-});
+});*/
 
 
 $('.mkdf-btn').on('click', function (){
@@ -369,8 +368,12 @@ $('.mkdf-btn').on('click', function (){
   $(this).parent().toggleClass('btn-popup-show');
 });
 
-
-
+var countz = 0;
+$('div.border-grd-items ul').find('li').each(function(){
+    if($(this).hasClass("dealers"))
+        countz++;
+});
+$("#showroomcount").text(countz);
 
 
 })(jQuery);

@@ -7,9 +7,6 @@
   $copyright_text = get_field('copyrighttext', 'options');
   $smedias = get_field('socialmedia', 'options');
 ?>
-<?php 
-if (function_exists('wise_chat')) { wise_chat(); }
-?>
 <footer class="footer-wrap" style="background: url(<?php echo THEME_URI; ?>/assets/images/ftr-bg-img.jpg);">
   <div class="ftr-inner">
     <div class="container">
@@ -89,17 +86,6 @@ if (function_exists('wise_chat')) { wise_chat(); }
     </div>
   </div>
 </footer>
-<?php 
-$user = get_current_user_id();
-echo $user;
-if( $user == 2 ){
-  echo '<div id="has-chat" data-ti="3"></div>';
-}
-if( $user == 3 ){
-  echo '<div id="has-chat" data-ti="2"></div>';
-}
-wp_footer();
-?>
-
+<?php wp_footer(); ?>
 </body>
 </html>

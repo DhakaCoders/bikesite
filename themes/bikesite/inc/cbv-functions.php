@@ -203,3 +203,10 @@ function thumbnail_columns_content($content, $column_name, $term_id) {
     return $content;
 }
 add_filter('manage_brand_category_custom_column' , 'thumbnail_columns_content' , 10 , 3);
+
+function phone_preg( $show_telefoon ){
+  $replaceArray = '';
+  $spacialArry = array(".", "/", "+", " ", "-");
+  $show_telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
+  return $show_telefoon;
+}
