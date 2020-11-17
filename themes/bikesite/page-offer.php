@@ -285,7 +285,7 @@ $query = new WP_Query( $args );
                   </div>
                   <div class="offer-item-row-rgt">
                     <h4><?php the_title(); ?></h4>
-                    <strong>2020-10-25</strong>
+                    <strong><?php echo get_the_date('Y-m-d'); ?></strong>
                     <?php echo get_the_excerpt(); ?>
                     <div class="read-more-btn">
                       <a href="<?php the_permalink( );?>" class="mkdf-btn mkdf-btn-medium mkdf-btn-predefined">
