@@ -1,16 +1,56 @@
 <?php 
 /*
-  Template Name: Offer
+  Template Name: Offers
 */
 get_header(); 
 $thisID = get_the_ID();
 ?>
 <?php 
-$brandname = '';
-$s_termID = '';
-$cityname = '';
-$meta = array();
-if( isset($_GET['brand']) && !empty($_GET['brand']) && ( !isset($_GET['city']) OR empty($_GET['city']))){ 
+$brandname = $s_termID = $cityname = $modelname = '';
+$meta = $tax = array();
+if( (isset($_GET['brand']) && !empty($_GET['brand']) ) && (isset($_GET['city']) && !empty($_GET['city'])) && (isset($_GET['model']) && !empty($_GET['model'])) ){
+  $modelname = $_GET['model'];
+
+  $tax[] = array( 
+      array(
+			'taxonomy' => 'bike_model',
+			'field'    => 'slug',
+			'terms'    => $modelname,
+      ),
+  );
+
+  $brandname = $_GET['brand'];
+  $cityname = $_GET['city'];
+
+  $search_term = get_term_by('slug', $brandname, 'brand');
+  if ( $search_term ){
+    $s_termID = $search_term->term_id;
+  }
+
+  $meta[] = array( 
+      'relation' => 'AND',
+      array(
+      'key' => 'select_brand',
+      'value' => $s_termID,
+      'compare' => '='
+      ),
+      array(
+          'key' => 'select_city',
+          'value' => $_GET['city'],
+          'compare' => '='
+      ),
+  );
+}elseif( (isset($_GET['model']) && !empty($_GET['model']) ) && (isset($_GET['brand']) && !empty($_GET['brand']) ) ){
+  $modelname = $_GET['model'];
+
+  $tax[] = array( 
+      array(
+			'taxonomy' => 'bike_model',
+			'field'    => 'slug',
+			'terms'    => $modelname,
+      ),
+  );
+
   $brandname = $_GET['brand'];
   $search_term = get_term_by('slug', $brandname, 'brand');
   if ( $search_term ){
@@ -22,7 +62,17 @@ if( isset($_GET['brand']) && !empty($_GET['brand']) && ( !isset($_GET['city']) O
        'value'   => $s_termID,
        'compare' => '=' 
   );
-}elseif( (!isset($_GET['brand']) && empty($_GET['brand']) ) && (isset($_GET['city']) && !empty($_GET['city'])) ){
+}elseif( (isset($_GET['model']) && !empty($_GET['model']) ) && (isset($_GET['city']) && !empty($_GET['city']) ) ){
+  $modelname = $_GET['model'];
+
+  $tax[] = array( 
+      array(
+			'taxonomy' => 'bike_model',
+			'field'    => 'slug',
+			'terms'    => $modelname,
+      ),
+  );
+  
   $cityname = $_GET['city'];
 
   $meta[] = array( 
@@ -52,6 +102,38 @@ if( isset($_GET['brand']) && !empty($_GET['brand']) && ( !isset($_GET['city']) O
           'key' => 'select_city',
           'value' => $_GET['city'],
           'compare' => '='
+      ),
+  );
+}elseif( isset($_GET['brand']) && !empty($_GET['brand']) ){ 
+  $brandname = $_GET['brand'];
+  $search_term = get_term_by('slug', $brandname, 'brand');
+  if ( $search_term ){
+    $s_termID = $search_term->term_id;
+  }
+
+  $meta[] = array(
+       'key'     => 'select_brand',
+       'value'   => $s_termID,
+       'compare' => '=' 
+  );
+}elseif( (isset($_GET['city']) && !empty($_GET['city'])) ){
+  $cityname = $_GET['city'];
+
+  $meta[] = array( 
+      array(
+          'key' => 'select_city',
+          'value' => $_GET['city'],
+          'compare' => '='
+      ),
+  );
+}elseif( (isset($_GET['model']) && !empty($_GET['model']) ) ){
+  $modelname = $_GET['model'];
+
+  $tax[] = array( 
+      array(
+			'taxonomy' => 'bike_model',
+			'field'    => 'slug',
+			'terms'    => $modelname,
       ),
   );
 }
@@ -115,11 +197,21 @@ if( $slides ):
                     </div>
                     <div class="bt-filter-search-item bt-filter-search-item-capacity">
                       <label>Model -</label>
+                      <?php                 
+                        $models = get_terms( array(
+                          'taxonomy' => 'bike_model',
+                          'hide_empty' => false,
+                          'parent' => 0
+                        ) );
+                      ?>
                       <div class="bt-selctpicker-ctlr">
-                        <select class="selectpicker" data-size="7" data-live-search="true">
-                          <option selected="selected" max=10>GSX 250 R</option>
-                          <option value="Dhaka_Branch">MT 15</option>
-                          <option value="Mymensing_Branch">GSX 250 R</option>
+                        <select name="model" class="selectpicker" data-size="7" data-live-search="true">
+                        	<option value="">Select Model</option>
+                        	<?php if ( ! empty( $models ) && ! is_wp_error( $models ) ){  ?>
+	                          <?php foreach ( $models as $model ) { ?>
+                          		<option value="<?php echo $model->slug; ?>" <?php echo ($modelname == $model->slug)? 'selected':'';?>><?php echo $model->name; ?></option>
+	                          <?php } ?>
+	                        <?php } ?>
                         </select>
                       </div>
                     </div>
@@ -154,6 +246,7 @@ if( $slides ):
 $args = array(
 'post_type' => 'offers',
 'posts_per_page' => -1,
+'tax_query' => $tax,
 'meta_query' => $meta
 );
 
