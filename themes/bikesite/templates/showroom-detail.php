@@ -90,7 +90,7 @@ if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/h4-img-42.jpg';
               <h4><span>search showrooms</span></h4>
             </div>
             <div class="bt-filter-search-controller">
-              <form class="clearfix">
+              <form class="clearfix" action="" method="get">
                 <div class="clearfix bt-search-selects">
                   <div class="bt-filter-search-item bt-filter-search-item-brands">
                     <label>Brand -</label>

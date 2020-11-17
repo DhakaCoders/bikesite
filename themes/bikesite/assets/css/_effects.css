@@ -56,7 +56,8 @@ nav.main-nav ul.sub-menu li:hover a{
 }
 
 nav.main-nav > ul > li:hover > a,
-.fl-textwidget ul li:hover a{
+.fl-textwidget ul li:hover a,
+.fl-textwidget ul li.active a{
 	color: #f4b406;
 }
 
