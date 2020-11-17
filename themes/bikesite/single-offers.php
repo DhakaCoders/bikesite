@@ -29,7 +29,7 @@ while( have_posts() ): the_post();
       <div class="row">
         <div class="col-sm-12 col-md-3">
           <div class="fl-lft-sidebar">
-			<?php get_sidebar(); ?>
+			     <?php get_sidebar(); ?>
             <div class="fl-sidebar">
               
             </div>

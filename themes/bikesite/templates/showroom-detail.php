@@ -1,8 +1,5 @@
 <?php 
-$brandname = '';
-$s_termID = '';
-$termname = '';
-$cityname = '';
+$brandname = $s_termID = $termname = $cityname = '';
 $meta = array();
 if( isset($_GET['brand']) && !empty($_GET['brand']) && ( !isset($_GET['city']) OR empty($_GET['city']))){ 
   $brandname = $_GET['brand'];
