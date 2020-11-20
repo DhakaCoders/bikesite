@@ -19,7 +19,10 @@ Text Domain: bike
 	display: none!important;
 }
 .bannerv2 .main-bnr-slide-item-des{
-	min-height: 250px;
+	min-height: 220px;
+}
+.bannerv3 .main-bnr-slide-item-des{
+	min-height: 200px;
 }
 .main-content.archive-main-content{
 	overflow: hidden;

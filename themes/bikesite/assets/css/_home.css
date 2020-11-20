@@ -38,6 +38,13 @@
 	font-weight: 400;
 	margin-bottom: 25px;
 }
+.bannerv2 .main-bnr-slide-item-des div{
+    max-width: 600px;
+}
+.bannerv2 .main-bnr-slide-item-des p{
+    font-size: 16px;
+    margin: 0;
+}
 .main-bnr-slide-item-des h2{
 	font-weight: 700;
 }
@@ -291,7 +298,8 @@ ul.slick-dots li.slick-active{
 .fl-textwidget ul li:last-child{
     border: none;
 }
-.fl-textwidget ul li:hover{
+.fl-textwidget ul li:hover,
+.fl-textwidget ul li.active{
     padding-left: 20px;
 
 }
@@ -325,7 +333,7 @@ background: -o-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.1
 background: -ms-linear-gradient(top, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
 background: linear-gradient(to bottom, rgba(186,178,177,1) 0%, rgba(158,154,153,0.17) 46%, rgba(168,165,168,0.06) 62%, rgba(214,211,214,0.06) 74%, rgba(255,255,255,0.06) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', endColorstr='#ffffff', GradientType=0 );
-    padding: 20px 20px 75px;
+    padding: 15px 20px 75px;
     border-radius: 10px 10px 0 0;
     margin-left: -20px;
     max-width: 1000px;
@@ -336,7 +344,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
     z-index: 9;
 }
 .bt-search-filter-sec-hdr h4{
-    color: #dfd999;
+    color: #fcb801;
     text-align: center;
     position: relative;
     margin-bottom: 25px;
@@ -579,7 +587,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 .brands-more-items a{
     position: relative;
     padding-right: 20px;
-    color: #f4b406;
+    color: #242424;
 }
 .brands-more-items a strong{
     color: inherit!important;

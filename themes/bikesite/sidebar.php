@@ -1,5 +1,5 @@
 <div class="fl-sidebar bt-bike-brands-wrap">
-  <h3 class="fl-widget-title">Bike Brands</h3>
+  <h3 class="fl-widget-title">Brands</h3>
   <?php 
   $active_cat = get_queried_object();
   $brands = get_terms( array(

@@ -63,7 +63,7 @@
       ) );
     ?>
     <div class="bt-filter-search-item bt-filter-search-item-categoris">
-      <label>CATEGORIES -</label>
+      <label>CATEGORY -</label>
       <div class="bt-selctpicker-ctlr">
         <?php if ( ! empty( $btypes ) && ! is_wp_error( $btypes ) ) { ?>
         <select name="btype" id="btype" class="selectpicker" data-size="7" data-live-search="true">

@@ -12,7 +12,7 @@ $brand = $term_obj_list[0]->name;
 $title = get_the_title();
 if( !empty($bannersec['title']) ) $title = $bannersec['title'];
 ?> 
-<section class="main-banner page-banner bannerv2" style="background: url(<?php echo $pagebanner; ?>);">
+<section class="main-banner page-banner bannerv3" style="background: url(<?php echo $pagebanner; ?>);">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -175,7 +175,7 @@ if ( ! empty( $btypes ) ) {
             </div>
 
             <div class="bt-full-specifications-ctrl">
-              <h5 class="bt-full-specifications-entry-title">Full Specifications of <?php the_title(); ?></h5>
+              <h5 class="bt-full-specifications-entry-title">Overview</h5>
               <div class="bt-full-specifications-row-01 bt-full-specifications-row">
                 <?php if( $fullspe ): ?>
                 <ul class="clearfix specification-tbl specification-tbl-sub ulc">

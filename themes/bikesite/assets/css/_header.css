@@ -247,7 +247,15 @@ nav.main-nav ul.sub-menu li:before {
 nav.main-nav ul.sub-menu li:hover:before {
     height: 100%;
 }
-
+.logo a{
+	display: inline-block;
+    vertical-align: middle;
+    margin-top: -10px;	
+}
+.logo a img{
+    max-height: 58px;
+    width: auto;	
+}
 /*
 -------------------
 Start Responsive

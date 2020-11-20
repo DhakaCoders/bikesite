@@ -103,6 +103,7 @@ if( $image && !empty( $image ) ){
               <?php endif; ?>
             </div>
           </div>
+          <?php get_template_part( 'templates/home', 'brands' ); ?>
         </div>
       </div>
   </div>    

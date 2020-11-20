@@ -66,9 +66,6 @@ endif;
                 ?>
               </div>
             </div>
-<!--             <div class="main-bnr-slide-item-img">
-              <img src="<?php echo THEME_URI; ?>/assets/images/layer_img_1.png">
-            </div> -->
           </div>
         </div>
       </div>
@@ -81,7 +78,7 @@ endif;
       <div class="col-sm-12">
         <div class="main-con-section search-filter-section">
             <div class="bt-search-filter-sec-hdr">
-              <h4><span>search your <br>bike</span></h4>
+              <h4><span>Search a <br>bike you like</span></h4>
             </div>
             <div class="bt-filter-search-controller">
               <?php get_template_part('templates/home', 'search'); ?>
@@ -91,10 +88,6 @@ endif;
     </div>
   </div>
 </section>
-
-<!-- <div class="welcome-section text-center">
-  <img src="<?php echo THEME_URI; ?>/assets/images/yamaha-fzs-fi-v3-abs-banner.jpg">
-</div> -->
 
 <section class="main-content home-main-content">
 <div class="hasImg">
@@ -114,53 +107,9 @@ endif;
             }else{
               get_template_part( 'templates/home', 'main' );
             }
+
+            get_template_part( 'templates/home', 'brands' );
           ?>
-          <div class="main-con-section">
-            <div class="fl-sec-hdr">
-              <h4>Popular Brands</h4>
-            </div>
-            <?php 
-            $brands = get_terms( array(
-              'taxonomy' => 'brand',
-              'hide_empty' => false,
-              'parent' => 0
-            ) );
-            ?>
-            <div class="popular-brands-logos">
-              <?php if ( ! empty( $brands ) && ! is_wp_error( $brands ) ){  ?>
-              <ul class="clearfix ulc">
-                <?php 
-                  $toalTerm = count($brands);
-                  $totalActiveTerm = 0;
-                  $i = 1;
-                  foreach ( $brands as $brand ) { 
-                  $is_popular = get_field('is_that_popular', $brand);
-                  if($is_popular):
-                    $totalActiveTerm = $i;
-                ?>
-                <li>
-                  <a href="<?php echo get_term_link($brand); ?>">
-                    <figure>
-                      <?php 
-                        $blogoID = get_field('blogo', $brand);
-                        if( !empty($blogoID) ) echo cbv_get_image_tag($blogoID);
-                      ?>
-                    </figure>
-                    <strong><?php echo $brand->name; ?></strong>
-                  </a>
-                </li>
-                <?php $i++; endif; } ?>
-                <?php if( $toalTerm > $totalActiveTerm ): ?>
-                <li class="brands-more-items">
-                  <a href="<?php echo home_url('brand'); ?>">
-                    <strong>More item</strong>
-                  </a>
-                </li>
-                <?php endif; ?>
-              </ul>
-              <?php } ?>
-            </div>
-          </div>
         </div>
       </div>
   </div>    
