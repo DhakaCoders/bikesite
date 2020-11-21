@@ -204,3 +204,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 .compare-vs-3 ul.comparison-tbl-data li{
 	width: 25%;
 }
+.compare-vs-3 ul.comparison-tbl-headers li.mhCol.compare-col-6,
+.compare-vs-3 ul.comparison-tbl-data li.mhCol.compare-col-6 {
+    width: 37.5% !important;
+}
