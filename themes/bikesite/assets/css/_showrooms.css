@@ -1,5 +1,6 @@
 .showrooms-main-content{
 	padding: 70px 0 70px;
+    overflow: hidden;
 }
 .dealers-row-hdr{
     display: flex;
