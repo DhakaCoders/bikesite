@@ -114,7 +114,7 @@ if($bkquery3->have_posts()):
   $col_6 = $start_compare_vs = $end_compare_vs = '';
   if( (!empty($title1) && !empty($title2) && empty($title3)) OR (!empty($title1) && !empty($title3) && empty($title2)) OR (!empty($title2) && !empty($title3) && empty($title1)) ){
     $col_6 = ' compare-col-6';
-    $start_compare_vs = '<div class="compare-vs-center">';
+    $start_compare_vs = '<div class="compare-vs-center clearfix">';
     $end_compare_vs = '</div>';
   }
 ?>

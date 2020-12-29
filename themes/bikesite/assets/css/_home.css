@@ -279,7 +279,7 @@ ul.slick-dots li.slick-active{
 .fl-textwidget{
     border: 1px solid #ccc;
     border-top: none;
-    padding: 10px 15px 10px;
+    padding: 10px 20px 10px;
 }
 .fl-textwidget ul{
     margin: 0;
@@ -288,7 +288,7 @@ ul.slick-dots li.slick-active{
 }
 .fl-textwidget ul li{
     position: relative;
-    padding: 5px 0 5px 15px;
+    padding: 5px 0 5px 0;
     border-bottom: 1px solid #ddd;
     color: #fff;
     transition: all 0.5s;
@@ -300,7 +300,7 @@ ul.slick-dots li.slick-active{
 }
 .fl-textwidget ul li:hover,
 .fl-textwidget ul li.active{
-    padding-left: 20px;
+    padding-left: 5px;
 
 }
 /*.fl-textwidget ul li:nth-child(2n+2){

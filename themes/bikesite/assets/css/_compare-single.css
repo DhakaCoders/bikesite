@@ -5,8 +5,11 @@
 	padding-top: 25px;
 	padding-bottom: 50px;
 }
-.compare-single-top-grd ul{
-	margin: 0 -8px;
+.compare-single-top-grd ul {
+    margin: 0 -8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .compare-single-top-grd ul li{
 	float: left;
@@ -82,9 +85,9 @@ ul.comparison-tbl-headers{
 }
 .compare-vs-titles{
 	text-align: center;
-	    padding: 20px 20px 25px;
+	padding: 20px 20px 25px;
     border-radius: 10px 10px 0 0;
-    margin-top: -80px;
+    margin-top: -97px;
     position: relative;
     z-index: 9;
 /*background: rgba(186,178,177,1);
@@ -106,21 +109,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 }
 .compare-vs-titles span {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 0 auto;
     width: 36px;
     height: 36px;
-    background: #24272c;
+    background: #f4b406;
     border: 1px solid rgba(36,39,44,.15);
     font-weight: 500;
     text-align: center;
-    line-height: 36px;
+    line-height: 30px;
     color: #fff;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     z-index: 10;
-    font-size: 15px;
+    font-size: 20px;
     position: relative;
     position: absolute;
     right: -17px;
@@ -152,7 +154,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 	width: 50%;
 	padding-left: 85px;
 	padding-right: 85px;
-	float: left;
 }
 
 .compare-vs-title h5{
