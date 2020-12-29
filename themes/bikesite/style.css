@@ -12,12 +12,6 @@ Text Domain: bike
 */
 
 @import url('assets/css/main.css');
-.wcMessagesContainerTab.wcChannelTab{
-	display: none;
-}
-.wcMessagesContainerTab .wcMessagesContainerTabCloseLink{
-	display: none!important;
-}
 .bannerv2 .main-bnr-slide-item-des{
 	min-height: 220px;
 }

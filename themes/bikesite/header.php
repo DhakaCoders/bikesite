@@ -58,7 +58,8 @@ if( is_array($logoObj) ){
                 <button><i class="fas fa-store"></i>Showrooms</button>
               </div>
               <div class="hdr-search">
-                <form action="<?php echo esc_url( home_url('/') );?>" method="get">
+                <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+                <form style="display: none;" action="<?php echo esc_url( home_url('/') );?>" method="get">
                   <input type="search" name="s" value="<?php the_search_query(); ?>" placeholder="Search Bikes or Scooters">
                   <button>
                     <i class="fa fa-search"></i>

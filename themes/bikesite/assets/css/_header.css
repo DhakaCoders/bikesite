@@ -256,6 +256,98 @@ nav.main-nav ul.sub-menu li:hover:before {
     max-height: 58px;
     width: auto;	
 }
+
+/**
+Ajax search plugin
+*/
+#ajaxsearchlite1 .probox, div.asl_w .probox{
+	height: 45px!important;
+}
+#ajaxsearchlite1 .probox .proinput input, 
+div.asl_w .probox .proinput input{
+	height: 45px!important;
+}
+#ajaxsearchlite1 .probox .proinput input.autocomplete, 
+div.asl_w .probox .proinput input.autocomplete{
+	margin-top: -45px!important;
+}
+div.asl_w .probox .promagnifier {
+    width: 80px!important;
+    height: 45px!important;
+    background: #000!important;
+}
+#ajaxsearchlite1 .probox, div.asl_w .probox{
+	background: #fff!important;
+}
+#ajaxsearchlite1 .probox .proinput, div.asl_w .probox .proinput{
+	margin: 0!important;
+	padding: 0!important;
+}
+body #ajaxsearchlite1 .probox .proinput input, 
+body div.asl_w .probox .proinput input{
+    border: 1px solid #ccc!important;
+    padding: 5px 10px 5px 20px!important;
+    box-sizing: border-box;
+    color: #333!important;
+    font-size: 17px!important;
+}
+body #ajaxsearchlite1 .probox .proinput input::-webkit-input-placeholder, 
+body div.asl_w .probox .proinput input::-webkit-input-placeholder{
+	color: #333!important;
+}
+div.asl_r.vertical {
+    background: #fff!important;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5)!important;
+}
+.asl_content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;	
+}
+.asl_content h3{}
+.asl_content h3 a {
+    color: #000!important;
+    font-size: 15px!important;
+    line-height: 24px!important;
+}
+div.asl_w .probox .proloading, div.asl_w .probox .proclose, 
+div.asl_w .probox .prosettings {
+    width: 45px!important;
+    height: 45px!important;
+}
+div.asl_w .probox .proloading{
+    padding: 12px!important;
+}
+span.asl_keyword{
+	display: none!important;
+}
+body div.asl_r.vertical{
+	top: 100px!important;
+}
+body div.asl_w.asl_an_fadeInDrop {
+    animation-name: aslAnFadeInDrop1!important;
+    -webkit-animation-name: aslAnFadeInDrop1!important;
+}
+body div.asl_w.asl_an_fadeOutDrop {
+    animation-name: aslAnFadeOutDrop1!important;
+    -webkit-animation-name: aslAnFadeOutDrop1!important;
+}
+@keyframes aslAnFadeInDrop1{
+	0%{opacity:0;transform:translate(0,-10px);}
+	100%{opacity:1;transform:translate(0,0);}
+}
+@-webkit-keyframes aslAnFadeInDrop1{
+	0%{opacity:0;transform:translate(0,-10px);-webkit-transform:translate(0,-10px);}
+	100%{opacity:1;transform:translate(0,0);-webkit-transform:translate(0,0);}
+}
+@keyframes aslAnFadeOutDrop1{
+	0%{opacity:1;transform:translate(0,0);-webkit-transform:translate(0,0);}
+	100%{opacity:0;transform:translate(0,-10px);-webkit-transform:translate(0,-10px);}
+}
+@-webkit-keyframes aslAnFadeOutDrop1{
+	0%{opacity:1;transform:translate(0,0);-webkit-transform:translate(0,0);}
+	100%{opacity:0;transform:translate(0,-10px);-webkit-transform:translate(0,-10px);}
+}
 /*
 -------------------
 Start Responsive
