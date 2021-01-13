@@ -528,6 +528,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab2b1', end
 }
 .product-title-spreed > span {
     color: #9b9b9b;
+    display: block;
 }
 
 

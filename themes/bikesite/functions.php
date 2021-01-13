@@ -23,6 +23,7 @@ if( !function_exists('cbv_theme_setup') ){
 			add_theme_support('category-thumbnails');
 		}
         add_image_size( 'offergrid', 192, 192, true );
+        add_image_size( 'comparegrid', 150, 134, true );
 
 		
 		// add size to media uploader

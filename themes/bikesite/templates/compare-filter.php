@@ -119,40 +119,61 @@
               <div class="compare-bikes-grd-ctlr">
                 <div class="clearfix ulc compare-bikes-slider" id="">
                   <?php 
+                    
+                  foreach( $popular_bikes as $p_bike ): 
                     $pbikeImg1 = $pbikeImg2 = '';
-                    foreach( $popular_bikes as $p_bike ): 
-                    $pbike1 = $p_bike['bike_1']; 
-                    $pbike2 = $p_bike['bike_2'];
-                    if( !empty($pbike1['image']) ) $pbikeImg1 = cbv_get_image_src( $pbike1['image'] );
-                    if( !empty($pbike2['image']) ) $pbikeImg2 = cbv_get_image_src( $pbike2['image'] ); 
+                    $pbike1 = $p_bike['select_bike1']; 
+                    $pbike2 = $p_bike['select_bike2'];
+                    $bike_ID1 = $pbike1->ID;
+                    $bike_ID2 = $pbike2->ID;
+                    $bike_featured1 =  get_field('featuredimg', $bike_ID1);
+                    $bike_featured2 =  get_field('featuredimg', $bike_ID2);
+                    if( !empty($bike_featured1['featured_image']) ) {
+                      $pbikeImg1 = cbv_get_image_src( $bike_featured1['featured_image'], 'comparegrid' );
+                    }
+                    if( !empty($bike_featured2['featured_image']) ) {
+                      $pbikeImg2 = cbv_get_image_src( $bike_featured2['featured_image'], 'comparegrid' );
+                    }
+
                   ?>
                   <div class="compare-bikes-grd-item">
                     <div class="compare-bikes-grd-item-innr">
                        <a class="overlay-link" href="#"></a>
                       <div class="clearfix compare-bike-imges">
                         <span class="vs">VS</span>
-                        <div class="compare-bike-img" style="background: url(<?php echo  $pbikeImg1; ?>);">
+                        <div class="compare-bike-img" style="background: url(<?php echo $pbikeImg1; ?>);">
                         </div>
-                        <div class="compare-bike-img" style="background: url(<?php echo  $pbikeImg2; ?>);">
+                        <div class="compare-bike-img" style="background: url(<?php echo $pbikeImg2; ?>);">
                         </div>
                       </div>
                       <div class="clearfix">
+                        
                         <div class="compare-bike-content-wrapper">
+                          <?php 
+                            $bike_engin1 =  get_field('enginetransmission', $bike_ID1);
+                            $bike_price1 =  get_field('priceav', $bike_ID1);
+                          ?>
                           <div class="product-title-spreed">
-                              <?php if( !empty($pbike1['title']) ) printf('<strong>%s</strong>', $pbike1['title']); ?>
-                              <?php if( !empty($pbike1['rpm']) ) printf('<span>%s RPM</span>', $pbike1['rpm']); ?>
+                              <?php if( !empty($pbike1->post_title) ) printf('<strong>%s</strong>', $pbike1->post_title); ?>
+                              <?php if( !empty($bike_engin1['rpm']) ) printf('<span>%s RPM</span>', $bike_engin1['rpm']); ?>
                           </div>
                           <div class="compare-bike-price">
-                              <?php if( !empty($pbike1['price']) ) printf('<span>BDT %s</span>', $pbike1['price']); ?>
+                              <?php if( !empty($bike_price1['price']) ) printf('<span>BDT %s</span>', $bike_price1['price']); ?>
                           </div>
+
                         </div>
+
                         <div class="compare-bike-content-wrapper">
+                          <?php 
+                            $bike_engin2 =  get_field('enginetransmission', $bike_ID2);
+                            $bike_price2 =  get_field('priceav', $bike_ID2);
+                          ?>
                           <div class="product-title-spreed">
-                              <?php if( !empty($pbike2['title']) ) printf('<strong>%s</strong>', $pbike2['title']); ?>
-                              <?php if( !empty($pbike2['rpm']) ) printf('<span>%s RPM</span>', $pbike2['rpm']); ?>
+                              <?php if( !empty($pbike2->post_title) ) printf('<strong>%s</strong>', $pbike2->post_title); ?>
+                              <?php if( !empty($bike_engin2['rpm']) ) printf('<span>%s RPM</span>', $bike_engin2['rpm']); ?>
                           </div>
                           <div class="compare-bike-price">
-                              <?php if( !empty($pbike2['price']) ) printf('<span>BDT %s</span>', $pbike2['price']); ?>
+                              <?php if( !empty($bike_price2['price']) ) printf('<span>BDT %s</span>', $bike_price2['price']); ?>
                           </div>
                         </div>
                       </div>
@@ -174,12 +195,21 @@
               <div class="compare-bikes-grd-ctlr">
                 <div class="clearfix ulc compare-bikes-slider" id="">
                   <?php 
+                  foreach( $popular_scooters as $p_scooter ): 
                     $scooterImg1 = $scooterImg2 = '';
-                    foreach( $popular_scooters as $p_scooter ): 
-                    $pscooter1 = $p_scooter['scooters_1']; 
-                    $pscooter2 = $p_scooter['scooters_2']; 
-                    if( !empty($pscooter1['image']) ) $scooterImg1 = cbv_get_image_src( $pscooter1['image'] );
-                    if( !empty($pscooter2['image']) ) $scooterImg2 = cbv_get_image_src( $pscooter2['image'] );
+                    $pscooter1 = $p_scooter['select_scooters1']; 
+                    $pscooter2 = $p_scooter['select_scooters2']; 
+
+                    $sct_ID1 = $pscooter1->ID;
+                    $sct_ID2 = $pscooter2->ID;
+                    $sct_featured1 =  get_field('featuredimg', $sct_ID1);
+                    $sct_featured2 =  get_field('featuredimg', $sct_ID2);
+                    if( !empty($sct_featured1['featured_image']) ) {
+                      $scooterImg1 = cbv_get_image_src( $sct_featured1['featured_image'], 'comparegrid' );
+                    }
+                    if( !empty($sct_featured2['featured_image']) ) {
+                      $scooterImg2 = cbv_get_image_src( $sct_featured2['featured_image'], 'comparegrid' );
+                    }
                   ?>
                   <div class="compare-bikes-grd-item">
                     <div class="compare-bikes-grd-item-innr">
@@ -193,21 +223,29 @@
                       </div>
                       <div class="clearfix">
                         <div class="compare-bike-content-wrapper">
+                          <?php 
+                            $sct_engin1 =  get_field('enginetransmission', $sct_ID1);
+                            $sct_price1 =  get_field('priceav', $sct_ID1);
+                          ?>
                           <div class="product-title-spreed">
-                              <?php if( !empty($pscooter1['title']) ) printf('<strong>%s</strong>', $pscooter1['title']); ?>
-                              <?php if( !empty($pscooter1['rpm']) ) printf('<span>%s RPM</span>', $pscooter1['rpm']); ?>
+                              <?php if( !empty($pscooter1->post_title) ) printf('<strong>%s</strong>', $pscooter1->post_title); ?>
+                              <?php if( !empty($sct_engin1['rpm']) ) printf('<span>%s RPM</span>', $sct_engin1['rpm']); ?>
                           </div>
                           <div class="compare-bike-price">
-                              <?php if( !empty($pscooter1['price']) ) printf('<span>BDT %s</span>', $pscooter1['price']); ?>
+                              <?php if( !empty($sct_price1['price']) ) printf('<span>BDT %s</span>', $sct_price1['price']); ?>
                           </div>
                         </div>
                         <div class="compare-bike-content-wrapper">
+                          <?php 
+                            $sct_engin2 =  get_field('enginetransmission', $sct_ID2);
+                            $sct_price2 =  get_field('priceav', $sct_ID2);
+                          ?>
                           <div class="product-title-spreed">
-                              <?php if( !empty($pscooter2['title']) ) printf('<strong>%s</strong>', $pscooter2['title']); ?>
-                              <?php if( !empty($pscooter2['rpm']) ) printf('<span>%s RPM</span>', $pscooter2['rpm']); ?>
+                              <?php if( !empty($pscooter2->post_title) ) printf('<strong>%s</strong>', $pscooter2->post_title); ?>
+                              <?php if( !empty($sct_engin2['rpm']) ) printf('<span>%s RPM</span>', $sct_engin2['rpm']); ?>
                           </div>
                           <div class="compare-bike-price">
-                              <?php if( !empty($pscooter2['price']) ) printf('<span>BDT %s</span>', $pscooter2['price']); ?>
+                              <?php if( !empty($sct_price2['price']) ) printf('<span>BDT %s</span>', $sct_price2['price']); ?>
                           </div>
                         </div>
 
