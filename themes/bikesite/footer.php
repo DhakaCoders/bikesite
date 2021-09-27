@@ -75,7 +75,7 @@
           <div class="col-sm-6">
             <div class="developedby">
               Developed by -
-              <a href="#">DhakaCoders</a>
+              <a href="#">IdeaInTec</a>
             </div>
           </div>
         </div>
